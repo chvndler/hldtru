@@ -5,8 +5,8 @@
 Web Application for hldtru®
 
 
-Legal, Archive, and Terms. [^1]
+[hldtru.co/](https://hldtru.co)
 
-[^1]: Copyright 2021
+
 
 
