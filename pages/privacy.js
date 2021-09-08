@@ -34,12 +34,10 @@ export default function Privacy() {
 
 
       <div className={styles.sidenav}>
-        <a href="https://hldtru.us/collections/new" target="_blank">NEW</a>
-        <a href="https://hldtru.us/collections/shorts" target="_blank">SHORTS</a>
-        <a href="https://hldtru.us/collections/tees" target="_blank">TEES</a>
-        <a href="https://hldtru.us/collections/all" target="_blank">SHOP ALL</a>
-        <a href="./src/hxouse.html">HXOUSE</a>
-        <a href="./src/archive.html">ARCHIVE©</a>
+        <a href="https://hldtru.us/collections/new" target="_blank" rel="noreferrer">NEW</a>
+        <a href="https://hldtru.us/collections/shorts" target="_blank" rel="noreferrer">SHORTS</a>
+        <a href="https://hldtru.us/collections/tees" target="_blank" rel="noreferrer">TEES</a>
+        <a href="https://hldtru.us/collections/all" target="_blank" rel="noreferrer">SHOP ALL</a>
         <br />
         <a href="">
           <h5>Information</h5>
