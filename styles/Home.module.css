@@ -8,114 +8,134 @@
   height: 100vh;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
+.header {
+  position: fixed;
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+  top: 10px;
   text-align: center;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+.svg {
+  max-width: 40px;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.footer {
+  color: #000;
+  font-family: "Helvetica", sans-serif !important;
+  font-size: 0.7rem !important;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 20px;
+  background-color: transparent;
+  letter-spacing: 0rem !important;
+  text-align: center;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+.footer a {
+  text-decoration: none !important;
+  color: #000 !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
+.footer a:hover {
+  color: rgba(50, 50, 50, 0.5) !important;
+}
+
+/* SIDENAV STYLE */
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: fixed;
+  z-index: 12;
+  top: 150px !important;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden;
   text-align: left;
-  color: inherit;
+}
+
+.sidenav a {
+  font-family: "Helvetica", sans-serif !important;
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  font-style: normal !important;
+  line-height: 1.1;
+  letter-spacing: 0.05rem !important;
+  color: #000;
+  padding-top: 0px;
+  padding-bottom: 0px;
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+  display: block;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.sidenav a:hover {
+  color: rgba(50, 50, 50, 0.5) !important;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.sidenav h5:hover {
+  color: rgba(50, 50, 50, 0.5) !important;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.sidenav h5 {
+  font-family: "Helvetica", sans-serif !important;
+  font-size: 0.75rem !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  color: #000;
+  letter-spacing: 0rem !important;
+  line-height: 1.2 !important;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+/* All @media Rules */
+
+/* MEDIUM DEVICES */
+
+@media only screen and (max-width: 700px) {
+  .sidenav a {
+    font-size: 0.85rem !important;
+    line-height: 1.24 !important;
+  }
+
+  .sidenav h5 {
+    font-size: 0.65rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .sidenav {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    top: 10px !important;
+  }
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+/* SMALL DEVICES - ( 500px & UP ) */
+
+@media only screen and (max-width: 500px) {
+  .sidenav a {
+    font-size: 0.85rem !important;
+    line-height: 1.24 !important;
+  }
+
+  .sidenav h5 {
+    font-size: 0.65rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .sidenav {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    top: 10px !important;
   }
 }
