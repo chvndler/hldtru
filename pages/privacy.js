@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Privacy.module.css'
 
 export default function Privacy() {
@@ -13,7 +14,8 @@ export default function Privacy() {
 
 
       <div className={styles.header}>
-        <a href="/index.html">
+      <Link href="/home">
+        <a className={styles.svg}>
           <svg className={styles.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 275.08">
             <rect width="300" height="275.08" fill="none" />
             <polygon
@@ -30,6 +32,7 @@ export default function Privacy() {
             />
           </svg>
         </a>
+        </Link>
       </div>
 
 
@@ -67,9 +70,9 @@ export default function Privacy() {
       </main>
 
       <footer className={styles.footer}>
-      <a href="./src/contact.html">Contact</a>
-      <a href="./src/terms.html">Terms & Conditions</a>
-      <a href="https://instagram.com/hldtru" target="_blank">Instagram</a>
+      <a href="">Contact</a>
+      <a href="">Terms & Conditions</a>
+      <a href="https://instagram.com/hldtru" target="_blank" rel="noreferrer">Instagram</a>
       </footer>
     </div>
   )
