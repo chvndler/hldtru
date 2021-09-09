@@ -11,16 +11,17 @@
 .header {
   position: fixed;
   width: 100%;
-  align-items: center;
+  align-items: center !important;
   top: 10px;
   text-align: center;
 }
 
 .svg {
   max-width: 40px;
+	margin: auto;
 	align-items: center;
 	vertical-align: middle;
-	text-align: center;
+	text-align: center !important;
 }
 
 .footer {

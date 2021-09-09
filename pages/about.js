@@ -69,20 +69,16 @@ export default function About() {
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-					<Image
-					className="h-4 ml-2"
-	        src="/vercel.svg"
-	        alt="Vercel Logo"
-        />
-        </a>
+			<footer className={styles.footer}>
+      <Link href="/">
+      <a>Contact</a>
+      </Link>
+
+      <Link href="/">
+      <a>Terms & Conditions</a>
+      </Link>
+
+      <a href="https://instagram.com/hldtru" target="_blank" rel="noreferrer">Instagram</a>
       </footer>
     </div>
   )
