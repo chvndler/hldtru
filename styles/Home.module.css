@@ -18,6 +18,9 @@
 
 .svg {
   max-width: 40px;
+	align-items: center;
+	vertical-align: middle;
+	text-align: center;
 }
 
 .footer {
