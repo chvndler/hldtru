@@ -33,17 +33,30 @@ export default function Home() {
         <a href="https://hldtru.us/collections/shorts" target="_blank" rel="noreferrer">SHORTS</a>
         <a href="https://hldtru.us/collections/tees" target="_blank" rel="noreferrer">TEES</a>
         <a href="https://hldtru.us/collections/all" target="_blank" rel="noreferrer">SHOP ALL</a>
-        <br />
+				<Link href="/hxouse">
+				<a>HXOUSE</a>
+				</Link>
+
+				<Link href="/archive">
+				<a>ARCHIVE©</a>
+				</Link>
+          <br />
+
+		    <Link href="/about">
+	      <a><h5>About</h5></a>
+	      </Link>
+
         <Link href="/">
-        <a>
-          <h5>Home</h5>
-        </a>
+        <a><h5>Home</h5></a>
         </Link>
+
         <Link href="/cover">
-        <a>
-          <h5>Cover</h5>
-        </a>
+        <a><h5>Cover</h5></a>
         </Link>
+
+				<Link href="/early">
+				<a><h5>Early Access</h5></a>
+				</Link>
       </div>
 
 
