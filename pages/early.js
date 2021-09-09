@@ -18,7 +18,7 @@ export default function Early() {
   <div className={styles.footer}>
     <a href="">Contact</a>
     <a href="">Terms & Conditions</a>
-    <a href="https://instagram.com/hldtru" rel="norefferer" target="_blank">Instagram</a>
+    <a rel="noreferrer" href="https://instagram.com/hldtru" target="_blank">Instagram</a>
   </div>
 	</div>
 ) }
