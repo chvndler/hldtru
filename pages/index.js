@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.header}>
-        <Link href="/home">
+        <Link href="/">
         <a className={styles.svg}>
           <svg className={styles.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 275.08">
             <rect width="300" height="275.08" fill="none" />
