@@ -47,22 +47,38 @@ export default function Home() {
 				</Link>
           <br />
 
-		    <Link href="/about">
-	      <a><h5>About</h5></a>
+		    <Link href="/early">
+	      <a><h5>Early Access</h5></a>
 	      </Link>
 
-        <Link href="/">
-        <a><h5>Home</h5></a>
+        <Link href="/about">
+        <a><h5>Information</h5></a>
         </Link>
 
-        <Link href="/cover">
-        <a><h5>Cover</h5></a>
+        <Link href="/contact">
+        <a><h5>Contact</h5></a>
         </Link>
+        <br />
+			   	<Link href="/">
+		  	 	<a><h5><strong>Dev Only Below</strong></h5></a>
+			   	</Link>
 
-				<Link href="/early">
-				<a><h5>Early Access</h5></a>
-				</Link>
-      </div>
+							<Link href="/privacy">
+		  	 	<a><h5>Privacy Policy</h5></a>
+			   	</Link>
+
+							<Link href="/terms">
+		  	 	<a><h5>Terms & Conditions</h5></a>
+			   	</Link>
+
+							<Link href="/cover">
+		  	 	<a><h5>Three.js Cover</h5></a>
+			   	</Link>
+
+							<Link href="/subscribe">
+		  	 	<a><h5>Subscribe</h5></a>
+			   	</Link>
+       </div>
 
 
 

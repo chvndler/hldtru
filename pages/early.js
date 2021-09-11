@@ -2,12 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Early.module.css'
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 export default function Early() {
   return (
 
-<>
+<div className={styles.container_fluid}>
+
       <Head>
        <title>Early Access</title>
 			 <meta name="description" content="Web Application for hldtru®" />
@@ -19,16 +19,40 @@ export default function Early() {
 			 <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
+			<div className={styles.div1}>
+	      <div className={styles.div2}>
+	        <form className={styles.form} onSubmit="checkPswd(this , event)">
+	          <p>ENTER PASSWORD TO SHOP.</p>
+	          <input
+	            className={styles.input_truth}
+	            type="password"
+	            id="pswd"
+	            placeholder="Enter Password"
+	          />
+	          <input
+						  className={styles.button}
+	            type="button"
+	            value="Submit"
+	            id="tap"
+	            onClick="checkPswd(this , event);"
+	          />
+	        </form>
+	        <br />
+	      </div>
+	    </div>
 
 
 
+			<footer className={styles.footer}>
+      <Link href="/">
+      <a>Contact</a>
+      </Link>
 
+      <Link href="/">
+      <a>Terms & Conditions</a>
+      </Link>
 
-  <div className={styles.footer}>
-    <a href="">Contact</a>
-    <a href="">Terms & Conditions</a>
-    <a rel="noreferrer" href="https://instagram.com/hldtru" target="_blank">Instagram</a>
-   </div>
-
-</>
+      <a href="https://instagram.com/hldtru" target="_blank" rel="noreferrer">Instagram</a>
+      </footer>
+</div>
 ) }

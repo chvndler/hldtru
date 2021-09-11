@@ -5,9 +5,9 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-	z-index: 1;
-	margin-top: 180px;
-	margin-bottom: 180px;
+  z-index: 1;
+  margin-top: 180px;
+  margin-bottom: 180px;
 }
 
 .header {
@@ -21,16 +21,16 @@
 
 .svg {
   max-width: 40px;
-	margin: auto;
-	align-items: center;
-	vertical-align: middle;
-	text-align: center !important;
-	z-index: 200 !important;
+  margin: auto;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center !important;
+  z-index: 200 !important;
 }
 
 .footer {
   color: #000;
-  font-family: "Helvetica", sans-serif !important;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.75rem !important;
   font-style: normal;
   font-weight: normal;
@@ -41,7 +41,6 @@
   left: 0;
   padding-bottom: 20px;
   background-color: transparent;
-  letter-spacing: 0rem !important;
   text-align: center;
 }
 
@@ -103,27 +102,28 @@
   line-height: 0.55 !important;
 }
 
-
 /* All @media Rules */
 
-/* SMALL DEVICES - ( 500px & UP ) */
+/* SMALL DEVICES - ( MAX 500px ) */
 
 @media only screen and (max-width: 500px) {
   .sidenav a {
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
   }
 
   .sidenav h5 {
-    font-size: 0.8rem !important;
+    font-size: 0.84rem !important;
+    line-height: 0.7 !important;
   }
 
   .sidenav {
+			 top: 130px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
 
-	.container {
-		margin-top: 140px;
-		margin-bottom: 140px;
-	}
+  .container {
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
 }

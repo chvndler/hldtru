@@ -17,7 +17,7 @@ export default function Home() {
 			  <Row>
 			    <Col>1 of 1
 
-			<InputGroup size="sm" className="mb-3">
+			<InputGroup hasValidation size="sm" className="mb-3">
 	    <InputGroup.Text id="inputGroup-sizing-sm">Subscribe</InputGroup.Text>
 	    <FormControl aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
 	  </InputGroup>
