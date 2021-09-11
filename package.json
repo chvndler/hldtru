@@ -10,17 +10,21 @@
   },
   "dependencies": {
     "@gltf-transform/core": "^0.12.11",
+    "@react-css/grid": "^1.4.4",
     "@react-three/drei": "^7.7.0",
     "@react-three/fiber": "^7.0.6",
     "@types/react": "^17.0.20",
-    "bootstrap": "^5.0.0-beta3",
+    "bootstrap": "^5.1.0",
+    "csstype": "^3.0.8",
     "next": "^11.1.2",
     "next-transpile-modules": "^8.0.0",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-beta.6",
     "react-code-input": "^3.10.1",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.15.1",
     "react-three-fiber": "^6.0.13",
+    "reactstrap": "^8.10.0",
     "three": "^0.132.2"
   },
   "devDependencies": {

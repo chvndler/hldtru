@@ -48,3 +48,8 @@
 .footer a:hover {
   color: rgba(50, 50, 50, 0.5) !important;
 }
+
+
+.input {
+	margin: 100px;
+}

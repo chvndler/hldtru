@@ -1,19 +1,14 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+  padding-top: 10px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100vh;
-}
-
-.header {
-  position: fixed;
-  width: 100%;
-  align-items: center !important;
-  top: 10px;
-  text-align: center;
+	 z-index: 2;
+  margin: 0;
 }
 
 .svg {
@@ -22,12 +17,13 @@
 	align-items: center;
 	vertical-align: middle;
 	text-align: center !important;
+	z-index: 200 !important;
 }
 
 .footer {
   color: #000;
   font-family: "Helvetica", sans-serif !important;
-  font-size: 0.7rem !important;
+  font-size: 0.75rem !important;
   font-style: normal;
   font-weight: normal;
   text-transform: none;
@@ -71,12 +67,10 @@
 }
 
 .sidenav a {
-  font-family: "Helvetica", sans-serif !important;
-  font-size: 1.1rem !important;
+  font-size: 1.5rem !important;
   font-weight: bold !important;
   font-style: normal !important;
-  line-height: 1.1;
-  letter-spacing: 0.05rem !important;
+  line-height: 1;
   color: #000;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -93,94 +87,35 @@
 }
 
 .sidenav h5 {
-  font-family: "Helvetica", sans-serif !important;
-  font-size: 0.75rem !important;
+  font-size: 0.8rem !important;
   font-weight: normal !important;
   font-style: normal !important;
   color: #000;
   letter-spacing: 0rem !important;
-  line-height: 1.2 !important;
+  line-height: 0.55 !important;
 }
+
 
 /* All @media Rules */
-
-/* MEDIUM DEVICES */
-
-@media only screen and (max-width: 700px) {
-  .sidenav a {
-    font-size: 0.85rem !important;
-    line-height: 1.24 !important;
-  }
-
-  .sidenav h5 {
-    font-size: 0.65rem !important;
-    line-height: 1.3 !important;
-  }
-
-  .sidenav {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    top: 10px !important;
-  }
-}
 
 /* SMALL DEVICES - ( 500px & UP ) */
 
 @media only screen and (max-width: 500px) {
   .sidenav a {
-    font-size: 0.85rem !important;
-    line-height: 1.24 !important;
+    font-size: 1.2rem !important;
   }
 
   .sidenav h5 {
-    font-size: 0.65rem !important;
-    line-height: 1.3 !important;
+    font-size: 0.8rem !important;
   }
 
   .sidenav {
     padding-left: 10px !important;
     padding-right: 10px !important;
-    top: 10px !important;
   }
-}
 
-.framework {
-  font-family: "Helvetica", sans-serif !important;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 80%;
-  height: 80%;
-  padding-right: 100px;
-  background-color: transparent;
-}
-
-.framework h2 {
-  font-family: "Helvetica", sans-serif !important;
-  font-size: 16px !important;
-  font-weight: bold;
-  font-style: normal;
-  line-height: 1.8 !important;
-  letter-spacing: 0.05em;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px !important;
-  padding-top: 0px !important;
-  color: #000 !important;
-}
-
-.framework p {
-  font-family: "Helvetica", sans-serif !important;
-  font-size: 12px !important;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1.8 !important;
-  padding-bottom: 10px;
-  color: grey;
+	.container {
+		margin-top: 140px;
+		margin-bottom: 140px;
+	}
 }

@@ -34,16 +34,16 @@ export default function Home() {
 
 
       <div className={styles.sidenav}>
-        <a href="https://hldtru.us/collections/new" target="_blank" rel="noreferrer">NEW</a>
-        <a href="https://hldtru.us/collections/shorts" target="_blank" rel="noreferrer">SHORTS</a>
-        <a href="https://hldtru.us/collections/tees" target="_blank" rel="noreferrer">TEES</a>
-        <a href="https://hldtru.us/collections/all" target="_blank" rel="noreferrer">SHOP ALL</a>
+        <a href="https://hldtru.us/collections/new" target="_blank" rel="noreferrer">New</a>
+        <a href="https://hldtru.us/collections/shorts" target="_blank" rel="noreferrer">Shorts</a>
+        <a href="https://hldtru.us/collections/tees" target="_blank" rel="noreferrer">Tees</a>
+        <a href="https://hldtru.us/collections/all" target="_blank" rel="noreferrer">Shop All</a>
 				<Link href="/hxouse">
-				<a>HXOUSE</a>
+				<a><i>H</i>x<i>ouse</i></a>
 				</Link>
 
 				<Link href="/archive">
-				<a>ARCHIVE©</a>
+				<a>Archive®</a>
 				</Link>
           <br />
 

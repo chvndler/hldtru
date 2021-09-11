@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Early.module.css'
-
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 export default function Early() {
   return (
@@ -20,14 +20,8 @@ export default function Early() {
       </Head>
 
 
-<div className={styles.pre_footer}>
-			<div className="input-group input-group-sm mb-3">
-			  <div className="input-group-prepend">
-			    <span className="input-group-text" id="inputGroup-sizing-sm">subscribe</span>
-			  </div>
-			  <input type="text" className="form-control" placeholder="Username" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"/>
-      </div>
-</div>
+
+
 
 
   <div className={styles.footer}>
