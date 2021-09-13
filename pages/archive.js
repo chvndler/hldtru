@@ -7,7 +7,7 @@ import ArchiveLogo from '../public/ArchiveLogo.svg'
 
 export default function Archive() {
   return (
-    <div className={styles.container}>
+    <div className={styles.canvas_img}>
       <Head>
         <title>hldtru®</title>
 				<meta name="description" content="Web Application for hldtru®" />
@@ -24,7 +24,7 @@ export default function Archive() {
 			<div className={styles.header}>
 				<Link href="/">
 				<a className={styles.svg}>
-<Image src={ArchiveLogo} alt="archive.logo" srcSet="0.5x" />
+        <Image src={ArchiveLogo} alt="archive.logo" srcSet="0.5x" />
 				</a>
 				</Link>
 			</div>
