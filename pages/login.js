@@ -4,7 +4,7 @@ import { ChakraProvider } from "@chakra-ui/react"
 import { InputGroup, Code, Heading, Text, Input, InputRightElement, Button, Container, Stack } from "@chakra-ui/react"
 import { Center, Square, Circle } from "@chakra-ui/react"
 import Cookies from "universal-cookie"
-import Login from "../components/Login"
+import Login from "../components/login"
 import consts from "/consts.js"
 
 export default function LoginPage({ hasReadPermission }) {

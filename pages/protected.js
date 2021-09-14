@@ -1,6 +1,6 @@
 import Head from "next/head"
 import { useRouter } from "next/router"
-import Login from "../components/Login"
+import Login from "../components/login"
 import styles from "../components/Essentials.module.css"
 
 export default function Protected({ hasReadPermission }) {
