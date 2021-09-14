@@ -30,16 +30,16 @@ export default function Archive() {
 			</div>
 
       <div className={styles.sidenav}>
-        <a href="https://hldtru.us/collections/new" target="_blank" rel="noreferrer">DAYS OF TRUTH</a>
-        <a href="https://hldtru.us/collections/shorts" target="_blank" rel="noreferrer">COENHAGEN© RACING</a>
-        <a href="https://hldtru.us/collections/tees" target="_blank" rel="noreferrer">V2 TRAINING</a>
-        <a href="https://hldtru.us/collections/all" target="_blank" rel="noreferrer">PRESEASON</a>
+        <a href="https://hldtru.us/collections/new" target="_blank" rel="noreferrer">Days of truth</a>
+        <a href="https://hldtru.us/collections/shorts" target="_blank" rel="noreferrer">Copenhagen© Racing</a>
+        <a href="https://hldtru.us/collections/tees" target="_blank" rel="noreferrer">V2 Training</a>
+        <a href="https://hldtru.us/collections/all" target="_blank" rel="noreferrer">Preseason</a>
 				<Link href="/hxouse">
-				<a>POWERED BY TRUTH</a>
+				<a>Powered by</a>
 				</Link>
 
 				<Link href="/archive">
-				<a>COLLECTION 1</a>
+				<a>Collection 1</a>
 				</Link>
           <br />
 
