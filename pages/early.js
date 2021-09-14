@@ -11,19 +11,6 @@ import styles from '../components/Essentials.module.css'
 	  return (
 
 <div className={styles.canvas_form}>
-
-<video
-autoPlay
-muted
-loop
-id="backgroundVideo"
-className={styles.video}>
-    <source
-		src="https://s3.us-east-2.amazonaws.com/truth.drop/assets/flower.mp4"
-		type="video/mp4"
-		/>
-</video>
-
  <div className={styles.container_form}>
 		<div className={styles.center}>
 			 <p className="h2">Early Access.</p>
