@@ -7,7 +7,7 @@ import ArchiveLogo from '../public/ArchiveLogo.svg'
 
 export default function Archive() {
   return (
-    <div className={styles.canvas_img}>
+    <div className={styles.container}>
       <Head>
         <title>hldtru®</title>
 				<meta name="description" content="Web Application for hldtru®" />

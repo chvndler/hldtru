@@ -40,16 +40,11 @@ export default function Hxouse() {
 
 						<Grid>
 						  <Grid.Item columnStart={2} columnEnd={5}>
-						    <h3>Structured Page</h3>
-										<p>
-												<small>
-														After you place an order you will receive a confirmation email that also
-														acts as a reciept. This receipt does not comprise a contract, your order
-														may be cancelled at anytime due to inability to authorize a payment,
-														insufficient stock, fraud or suspicion or any other reason deemed
-														appropriate by hldtru®.
-												</small>
-										</p>
+
+
+                      <h1>Move the mouse around!</h1>
+
+
 						  </Grid.Item>
 						</Grid>
 

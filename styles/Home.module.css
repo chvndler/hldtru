@@ -10,18 +10,6 @@
   margin-bottom: 180px;
 }
 
-.canvas_img {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: relative;
-	padding: 0;
-	align-items: center;
-	height: 100%;
-	z-index: 0;
-	margin: auto;
-}
-
 .header {
   position: fixed;
   width: 100%;
