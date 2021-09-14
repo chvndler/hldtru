@@ -1,6 +1,6 @@
 import Head from "next/head"
 import { useRouter } from "next/router"
-import Login from "../components/login"
+import Login from "../components/Login"
 import styles from "../components/Essentials.module.css"
 
 export default function Protected({ hasReadPermission }) {
@@ -16,7 +16,7 @@ export default function Protected({ hasReadPermission }) {
         <title>Protected Page</title>
       </Head>
 
-      <div className={styles.canvas_form}>
+      <div>
 			I am supposed to be protected.
 			</div>
     </div>

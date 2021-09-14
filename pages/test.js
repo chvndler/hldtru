@@ -11,26 +11,37 @@ import styles from '../components/Essentials.module.css'
 
 
 
-    <ChakraProvider>
-		<div className={styles.canvas_form}>
-		  <div className={styles.container_form}>
-    <div className={styles.center}>
-<Container maxW="xl" centerContent>
-<Heading as="h2" size="xl">
-	Early Access.
-</Heading>
-<br />
-	<InputGroup size="sm" w="100%">
-<Input focusBorderColor="lime" borderRadius="md" type="password" placeholder="Enter password" />
-	</InputGroup>
-	<br />
-	<br />
-	<Text fontSize="sm"><i>power in <strong>truth</strong></i>®</Text>
-</Container>
+<ChakraProvider>
+  <div className={styles.canvas_form}>
+    <div className={styles.container_form}>
+      <div className={styles.center}>
+        <Container maxW="xl" centerContent>
+          <Heading as="h2" size="xl">
+            Early Access.
+          </Heading>
+          <br />
+          <InputGroup size="sm" w="100%">
+            <Input
+              focusBorderColor="lime"
+              borderRadius="md"
+              type="password"
+              placeholder="Enter password"
+            />
+          </InputGroup>
+          <br />
+          <br />
+          <Text fontSize="sm">
+            <i>
+              power in <strong>truth</strong>
+            </i>
+            ®
+          </Text>
+        </Container>
+      </div>
     </div>
-		</div>
-		</div>
-    </ChakraProvider>
+  </div>
+</ChakraProvider>
+
 
 
 

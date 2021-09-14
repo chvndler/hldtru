@@ -1,6 +1,6 @@
 import styles from '../styles/globals.css'
-/* ensure all pages have Bootstrap CSS */
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ChakraProvider } from "@chakra-ui/react"
 import Cookies from "universal-cookie"
 import consts from "/consts.js"
 import App from 'next/app'
