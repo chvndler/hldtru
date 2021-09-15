@@ -13,12 +13,13 @@
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@gltf-transform/core": "^0.12.11",
-    "@react-css/grid": "^1.4.4",
-    "@react-three/drei": "^7.7.0",
+    "@react-css/grid": "^1.4.5",
+    "@react-three/drei": "^7.8.0",
     "@react-three/fiber": "^7.0.6",
-    "@types/react": "^17.0.20",
-    "bootstrap": "^5.1.0",
-    "csstype": "^3.0.8",
+    "@types/react": "^17.0.21",
+    "bootstrap": "^5.1.1",
+    "csstype": "^3.0.9",
+    "formik": "^2.2.9",
     "framer-motion": "^4.1.17",
     "jquery": "^3.6.0",
     "next": "^11.1.2",
@@ -28,7 +29,7 @@
     "react-bootstrap": "^2.0.0-beta.6",
     "react-code-input": "^3.10.1",
     "react-dom": "^17.0.2",
-    "react-hook-form": "^7.15.1",
+    "react-hook-form": "^7.15.3",
     "react-router": "^5.2.1",
     "react-three-fiber": "^6.0.13",
     "reactstrap": "^8.10.0",
@@ -43,6 +44,6 @@
     "eslint": "^7.32.0",
     "eslint-config-next": "11.1.0",
     "postcss": "^8.3.6",
-    "typescript": "^4.4.2"
+    "typescript": "^4.4.3"
   }
 }

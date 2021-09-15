@@ -12,6 +12,11 @@
   margin: 0;
 }
 
+.canvas_fluid {
+	padding: 0;
+  margin: 0;
+}
+
 .container {
   padding-top: 10px;
   padding-left: 300px;

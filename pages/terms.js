@@ -1,137 +1,180 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 import styles from '../components/Essentials.module.css'
+import {
+	ChakraProvider,
+	Container,
+	Box,
+	Center,
+	Text,
+	Heading,
+	Skeleton,
+	Link,
+	Menu,
+	MenuButton,
+	Button,
+	MenuList,
+	MenuOptionGroup,
+	MenuItem,
+	MenuDivider,
+	Portal,
+	Stack,
+	Badge,
+} from "@chakra-ui/react"
 import Grid from '@react-css/grid'
 
+
+
 export default function Terms() {
+	const router = useRouter()
+
   return (
 
-		 <div className={styles.container}>
-	   <Head>
-	     <title>Terms & Conditions.</title>
-			 <meta name="description" content="Web Application for hldtru®" />
-			 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-			 <link rel="icon" href="/favicon.ico" />
-			 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-			 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-			 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-			 <link rel="manifest" href="/site.webmanifest" />
-	   </Head>
+<div className={styles.canvas_fluid}>
+  <Head>
+    <title>Terms & Conditions.</title>
+    <meta name="description" content="Web Application for hldtru®" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </Head>
 
 
-				<Grid className={styles.grid_gap} gap='2em'>
-				</Grid>
+<ChakraProvider>
+	<Menu className={styles.menu}>
+	<Box pos="fixed" zIndex={20} top="0" bg="white" w="100%" p={3} color="white">
+		<Stack direction="row">
+     <Badge as="button" variant="outline" colorScheme="gray" onClick={() => router.back()}>
+		 Back
+		 </Badge>
+     <Badge as="button">
+		 <Link href="https://hldtru.us/" target="_blank" rel="norefferer">Webstore</Link>
+		 </Badge>
+     <Badge as="button" href="https://chakra-ui.com" target="_blank" rel="norefferer">Archive</Badge>
+     <Badge as="button" href="/archive" target="_blank" rel="norefferer">Cart</Badge>
+     </Stack>
+		 </Box>
+	</Menu>
+
+  <Skeleton height="80px" isLoaded />
+  <Skeleton height="80px" isLoaded />
 
 
-				<Grid>
-						<Grid.Item columnStart={2} columnEnd={5}>
-	     <p className="h4">Legal</p>
-	     <p>
-	       <small>
-	         After you place an order you will receive a confirmation email that also
-	         acts as a reciept. This receipt does not comprise a contract, your order
-	         may be cancelled at anytime due to inability to authorize a payment,
-	         insufficient stock, fraud or suspicion or any other reason deemed
-	         appropriate by hldtru®.
-	       </small>
-	     </p>
+    <Container maxW="container.md">
+      <Heading as="h4" size="sm">
+        LEGAL
+      </Heading>
+      <Skeleton height="8px" isLoaded />
+      <Text fontSize="xs">
+        After you place an order you will receive a confirmation email that also
+        acts as a reciept. This receipt does not comprise a contract, your order
+        may be cancelled at anytime due to inability to authorize a payment,
+        insufficient stock, fraud or suspicion or any other reason deemed
+        appropriate by hldtru®.
+      </Text>
 
-	     <br />
+      <Skeleton height="40px" isLoaded />
 
-	     <p className="h4">Payment Methods</p>
-	     <p>
-	       <small>
-	         All prices are in $USD. Our Webstore currently accept Visa, Mastercard,
-	         American Express, Discover, Apple Pay, and PayPal.
-	       </small>
-	     </p>
+      <Heading as="h4" size="sm">
+        PAYMENT METHODS
+      </Heading>
+      <Skeleton height="8px" isLoaded />
+      <Text fontSize="xs">
+        All prices are in $USD. Our Webstore currently accept Visa, Mastercard,
+        American Express, Discover, Apple Pay, and PayPal.
+      </Text>
 
-	     <br />
+      <Skeleton height="40px" isLoaded />
 
-	     <p className="h4">Privacy Policy</p>
-	     <p>
-	       <small>
-	         Under no circumstances will your personal information be shared or sold
-	         to third parties. By using our webstore, you agree to provide hldtru®
-	         with your email, for future marketing & updates such as: New releases,
-	         Sales, and all information that our shipping partners may provide to you
-	         regarding your order(s) from hldtru®.
-	         <br />
-	         <br />
-	         As always, We respect your privacy. You have the option to opt-out at
-	         any time.
-	         <br />
-	         <br />
-										(<a href="https://manage.kmail-lists.com/subscriptions/unsubscribe?a=UFJYfF&g=SchTjq" target="_blank" rel="noreferrer"> Manage Marketing Preferences </a>)
-	       </small>
-	     </p>
+      <Heading as="h4" size="sm">
+        PRIVACY POLICY
+      </Heading>
+      <Skeleton height="10px" isLoaded />
+      <Text fontSize="xs">
+			Under no circumstances will your personal information be shared or sold
+			to third parties. By using our webstore, you agree to provide hldtru®
+			with your email, for future marketing & updates such as: New releases,
+			Sales, and all information that our shipping partners may provide to you
+			regarding your order(s) from hldtru®.
+       <Skeleton height="10px" isLoaded />
+        we respect your privacy, you have the option to opt-out at any time.
+        <Skeleton height="10px" isLoaded />
+        Manage (or){" "}
+        <Link
+          color="purple"
+          href="https://manage.kmail-lists.com/subscriptions/unsubscribe?a=UFJYfF&g=SchTjq"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Update Marketing Preferences.
+        </Link>
+		  <Skeleton height="40px" isLoaded />
+      </Text>
 
-	     <br />
 
-	     <p className="h4">Preorder Policy</p>
-	     <p>
-	       <small>
-	         Under no circumstances will your personal information be shared or sold
-	         to third parties. By using our webstore, you agree to provide hldtru®
-	         with your email, for future marketing & updates such as: New releases,
-	         Sales, and all information that our shipping partners may provide to you
-	         regarding your order(s) from hldtru®.
-	       </small>
-	     </p>
 
-	     <br />
+      <Heading as="h4" size="sm">
+        PREORDER POLICY
+      </Heading>
+      <Skeleton height="8px" isLoaded />
+      <Text fontSize="xs">
+        All prices are in $USD. Our Webstore currently accept Visa, Mastercard,
+        American Express, Discover, Apple Pay, and PayPal.
+				<Skeleton height="40px" isLoaded />
+      </Text>
 
-	     <p className="h4">Shipping & Taxes</p>
-	     <p>
-	       <small>
-	         Under no circumstances will your personal information be shared or sold
-	         to third parties. By using our webstore, you agree to provide hldtru®
-	         with your email, for future marketing & updates such as: New releases,
-	         Sales, and all information that our shipping partners may provide to you
-	         regarding your order(s) from hldtru®.
-	       </small>
-	     </p>
 
-	     <br />
 
-	     <p className="h4">Returns and Exchanges</p>
-	     <p>
-	       <small>
-	         Under no circumstances will your personal information be shared or sold
-	         to third parties. By using our webstore, you agree to provide hldtru®
-	         with your email, for future marketing & updates such as: New releases,
-	         Sales, and all information that our shipping partners may provide to you
-	         regarding your order(s) from hldtru®.
-	       </small>
-	     </p>
-						</Grid.Item>
-	   </Grid>
+      <Heading as="h4" size="sm">
+        SHIPPING & TAXES
+      </Heading>
+      <Skeleton height="8px" isLoaded />
+      <Text fontSize="xs">
+        All prices are in $USD. Our Webstore currently accept Visa, Mastercard,
+        American Express, Discover, Apple Pay, and PayPal.
+      </Text>
 
-				<Grid className={styles.grid_gap} gap='2em'></Grid>
+       <Skeleton height="40px" isLoaded />
 
-				<Grid className={styles.grid_align_center} alignItems='center'>
-				<p>
-				Copyright © 2021. All rights reserved.
-				</p>
-				<p>Power in <i><strong>Truth</strong></i>®</p>
-				</Grid>
+      <Heading as="h4" size="sm">
+        RETURNS & EXCHANGES
+      </Heading>
+      <Skeleton height="8px" isLoaded />
+      <Text fontSize="xs">
+        All prices are in $USD. Our Webstore currently accept Visa, Mastercard,
+        American Express, Discover, Apple Pay, and PayPal.
+      </Text>
+    </Container>
 
-				<Grid className={styles.grid_gap} gap='2em'></Grid>
 
-	   <footer className={styles.footer}>
-	     <Link href="/">
-	       <a>Contact</a>
-	     </Link>
+		<Skeleton height="80px" isLoaded />
+		<Skeleton height="80px" isLoaded />
 
-	     <Link href="/">
-	       <a>Terms & Conditions</a>
-	     </Link>
+  </ChakraProvider>
 
-	     <a href="https://instagram.com/hldtru" target="_blank" rel="noreferrer">
-	       Instagram
-	     </a>
-	   </footer>
-	  </div>
+
+
+  <footer className={styles.footer}>
+    <Link href="/">
+      <a>Contact</a>
+    </Link>
+
+    <Link href="/">
+      <a>Terms & Conditions</a>
+    </Link>
+
+    <a href="https://instagram.com/hldtru" target="_blank" rel="noreferrer">
+      Instagram
+    </a>
+  </footer>
+</div>
+
   )
 }
