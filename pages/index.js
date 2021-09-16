@@ -95,7 +95,7 @@ export default function Home() {
     </Link>
     <br />
 
-    <Link href="/early">
+    <Link href="/locked">
       <a>
         <h5>Early Access</h5>
       </a>
@@ -107,9 +107,9 @@ export default function Home() {
       </a>
     </Link>
 
-    <Link href="/contact">
+    <Link href="/subscribe">
       <a>
-        <h5>Contact</h5>
+        <h5>Subscribe</h5>
       </a>
     </Link>
     <br />
@@ -149,17 +149,17 @@ export default function Home() {
 
 { /*--- Footer ---*/ }
   <footer className={styles.footer}>
-    <Link href="/">
+    <Link href="/contact">
       <a>Contact</a>
     </Link>
 
-    <Link href="/">
+    <Link href="/terms">
       <a>Terms & Conditions</a>
     </Link>
 
-    <a href="https://instagram.com/hldtru" target="_blank" rel="noreferrer">
-      Instagram
-    </a>
+<Link href="/privacy">
+    <a>Privacy Policy</a>
+    </Link>
   </footer>
 { /*--- End Footer ---*/ }
 </div>

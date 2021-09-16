@@ -10,6 +10,26 @@ import {
 	Nav,
 	NavDropdown
 } from 'react-bootstrap';
+import {
+	ChakraProvider,
+	Box,
+	Center,
+	Text,
+	Heading,
+	Skeleton,
+	Menu,
+	MenuButton,
+	Button,
+	MenuList,
+	MenuOptionGroup,
+	MenuItem,
+	MenuDivider,
+	Portal,
+	Stack,
+	Badge,
+} from "@chakra-ui/react"
+
+
 
 export default function About() {
   return (
@@ -27,30 +47,48 @@ export default function About() {
 		<link rel="manifest" href="/site.webmanifest" />
   </Head>
 
-
-	<Navbar fixed="top" bg="transparent" expand="md" className="Navbar">
-	  <Container>
-	    <Navbar.Brand href="/"><Image src={HxouseLogo} alt="hxouse.logo" srcSet="0.5x" /></Navbar.Brand>
-	    <Navbar.Toggle aria-controls="navbar-toggler" />
-	    <Navbar.Collapse id="basic-navbar-nav">
-	      <Nav className="me-auto">
-	        <Nav.Link href="#home">Home</Nav.Link>
-	        <Nav.Link href="#link">Link</Nav.Link>
-	        <NavDropdown title="Webstore" id="basic-nav-dropdown">
-	          <NavDropdown.Item href="#action/3.1">New</NavDropdown.Item>
-	          <NavDropdown.Item href="#action/3.2">Shorts</NavDropdown.Item>
-	          <NavDropdown.Item href="#action/3.3">Tees</NavDropdown.Item>
-	          <NavDropdown.Divider />
-	          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-	        </NavDropdown>
-	      </Nav>
-	    </Navbar.Collapse>
-	  </Container>
-	</Navbar>
+<ChakraProvider>
+  <Menu className={styles.menu}>
+    <Box
+      pos="fixed"
+      zIndex={20}
+      top="0"
+      bg="white"
+      w="100%"
+      p={3}
+      color="white"
+    >
+      <Stack direction="row">
+        <Badge
+          as="button"
+          variant="outline"
+          colorScheme="gray"
+          onClick={() => router.back()}
+        >
+          Back
+        </Badge>
+        <Badge as="button">
+          <Link href="https://hldtru.us/" target="_blank" rel="norefferer">
+            Webstore
+          </Link>
+        </Badge>
+        <Badge
+          as="button"
+          href="https://chakra-ui.com"
+          target="_blank"
+          rel="norefferer"
+        >
+          Archive
+        </Badge>
+        <Badge as="button" href="/archive" target="_blank" rel="norefferer">
+          Cart
+        </Badge>
+      </Stack>
+    </Box>
+  </Menu>
+</ChakraProvider>
 
 <div className={styles.container}>
-
-
 		<Grid>
 				<Grid.Item columnStart={2} columnEnd={5}>
 				<p className="h4">About the Brand.</p>
@@ -61,18 +99,6 @@ export default function About() {
 								<br />
 								</small>
 				</p>
-
-				<br />
-				<br />
-
-				<Grid className={styles.grid_gap} gap='2em'></Grid>
-
-				<Grid className={styles.grid_align_center} alignItems='center'>
-				<p>
-				Copyright © 2021. All rights reserved.
-				</p>
-				<p>Power in <i><strong>Truth</strong></i>®</p>
-				</Grid>
 
 
 

@@ -76,7 +76,7 @@ export default function Locked() {
 
 
     <Box pos="fixed" zIndex={30} bottom="0" bg="white" w="100%" p={4}>
-      <Stack direction="row">
+      <Stack direction="row" align="center">
         <AiOutlineInstagram />
         <TiSocialTwitter />
         <TiSocialVimeo />

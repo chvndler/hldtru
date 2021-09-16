@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import { useState } from 'react'
 import { Form, Field } from 'react-final-form'
 import { FORM_ERROR } from 'final-form'
+import { useToast } from "@chakra-ui/react"
 import styles from '../components/Essentials.module.css'
 import { ChakraProvider,
   Button,
@@ -10,6 +11,7 @@ import { ChakraProvider,
   InputRightElement,
   InputGroup,
   Badge,
+  WrapItem,
   Skeleton,
  } from '@chakra-ui/react'
 
@@ -18,6 +20,7 @@ import { ChakraProvider,
 function Password() {
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
+    const toast = useToast()
 
     const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
     const onSubmit = async values => {
@@ -35,7 +38,7 @@ function Password() {
       validate={values => {
         const errors = {}
         if (!values.password) {
-          errors.password = 'Early Access Password is Required'
+          errors.password = 'Early Access Password is Required.'
         }
         return errors
       }
@@ -71,25 +74,31 @@ render={({
                  {show ? "Hide" : "Show"}
              </Button>
        </InputRightElement>
-  {meta.error && meta.touched && <span className={styles.alert}>
+  {meta.error && meta.touched &&
+
+    <span className={styles.alert}>
+
   <Badge
-    variant="outline"
-    colorScheme="purple"
+    variant="subtle"
+    colorScheme="gray"
     m="auto"
     zIndex="1000"
     >{meta.error}</Badge></span>}
+
         </InputGroup>
             )}
           </Field>
           {submitError && <span className={styles.error}>
+
           <Badge
               variant="subtle"
-              colorScheme="blue"
+              colorScheme="gray"
               m="auto"
               zIndex="1002"
               pl="10px"
               pr="10px">
           {submitError}</Badge></span>}
+
             <Button
                size="xs"
                height="28px"
