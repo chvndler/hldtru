@@ -32,6 +32,7 @@
     "react-dom": "^17.0.2",
     "react-final-form": "^6.5.3",
     "react-hook-form": "^7.15.3",
+    "react-icons": "^4.2.0",
     "react-router": "^5.2.1",
     "react-three-fiber": "^6.0.13",
     "reactstrap": "^8.10.0",
