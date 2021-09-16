@@ -1,55 +1,119 @@
-import React from 'react';
-import { Formik } from 'formik';
-import { Form, Field, FormErrorMessage, FormControl, FormLabel, Input } from 'formik';
-import { Button } from 'formik'
+import React from 'react'
+import { render } from 'react-dom'
+import { useState } from 'react'
+import { Form, Field } from 'react-final-form'
+import { FORM_ERROR } from 'final-form'
+import styles from '../components/Essentials.module.css'
+import { ChakraProvider,
+  Button,
+  Input,
+  InputRightElement,
+  InputGroup,
+  Badge,
+  Skeleton,
+ } from '@chakra-ui/react'
 
 
 
+function Password() {
+    const [show, setShow] = React.useState(false)
+    const handleClick = () => setShow(!show)
 
-function FormikExample() {
-  function validatePassword(value) {
-    let error
-    if (!value) {
-      error = "Password is required"
-    } else if (value.toLowerCase() !== "truth") {
-      error = "Jeez! You're not a fan"
-    }
-    return error
+    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
+    const onSubmit = async values => {
+          await sleep(300)
+
+          if (values.password !== 'truth') {
+              return { [FORM_ERROR]: 'Password is incorrect.' }
+          }
+    window.open("https://www.hldtru.us/collections/early-truth", "_blank");
   }
 
-  return (
-    <Formik
-      initialValues={{ password: "Enter Password" }}
-      onSubmit={(values, actions) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2))
-          actions.setSubmitting(false)
-        }, 1000)
-      }}
-    >
-      {(props) => (
-        <Form>
-          <Field name="password" validate={validatePassword}>
-            {({ field, form }) => (
-              <FormControl isInvalid={form.errors.name && form.touched.name}>
-                <FormLabel htmlFor="password">Enter Password</FormLabel>
-                <Input {...field} id="password" placeholder="Password" />
-                <FormErrorMessage>{form.errors.password}</FormErrorMessage>
-              </FormControl>
+ return (
+    <Form
+      onSubmit={onSubmit}
+      validate={values => {
+        const errors = {}
+        if (!values.password) {
+          errors.password = 'Early Access Password is Required'
+        }
+        return errors
+      }
+    }
+
+render={({
+        submitError,
+        handleSubmit,
+        form,
+        submitting,
+        pristine,
+        values
+      }) => (
+
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <Field name="password">
+            {({ input, meta }) => (
+            <InputGroup size="sm">
+              <Input {...input}
+                  focusBorderColor="lime"
+                  borderRadius="lg"
+                  pr=".5rem"
+                  type={show ? "text" : "password"}
+                  placeholder="Enter password"
+                  isRequired
+              />
+        <InputRightElement width="3.5rem" pr=".25rem">
+             <Button
+               h="1.5rem"
+               w="3.5rem"
+               size="xs"
+               onClick={handleClick}>
+                 {show ? "Hide" : "Show"}
+             </Button>
+       </InputRightElement>
+  {meta.error && meta.touched && <span className={styles.alert}>
+  <Badge
+    variant="outline"
+    colorScheme="purple"
+    m="auto"
+    zIndex="1000"
+    >{meta.error}</Badge></span>}
+        </InputGroup>
             )}
           </Field>
-          <Button
-            mt={4}
-            colorScheme="teal"
-            isLoading={props.isSubmitting}
-            type="submit"
-          >
-            Submit
-          </Button>
-        </Form>
-      )}
-    </Formik>
-  )
+          {submitError && <span className={styles.error}>
+          <Badge
+              variant="subtle"
+              colorScheme="blue"
+              m="auto"
+              zIndex="1002"
+              pl="10px"
+              pr="10px">
+          {submitError}</Badge></span>}
+            <Button
+               size="xs"
+               height="28px"
+               width="100%"
+               mt={1}
+               border="0px"
+               borderColor="gray"
+               type="submit"
+               disabled={submitting}
+               onClick={handleSubmit}
+               >
+              Enter
+            </Button>
+          <pre className={styles.pre}>{JSON.stringify(values, 0, 2)}</pre>
+      </form>
+
+
+
+    )
+  }
+ />
+
+
+ )
 }
 
-export default Formik
+export default Password

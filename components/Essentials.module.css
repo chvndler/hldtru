@@ -12,6 +12,22 @@
   margin: 0;
 }
 
+.form {
+  position: relative;
+  max-width: 400px !important;
+  width: 100% !important;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border: 0px solid #ccc;
+}
+
 .canvas_fluid {
 	padding: 0;
   margin: 0;
@@ -33,7 +49,7 @@
 .container_form {
 	padding: 0;
 	max-width: 100vw;
-	width: 360px;
+	width: 380px;
 	min-height: 100vh;
 	height: 100%;
 	z-index: 2;
@@ -48,7 +64,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	width: 360px;
+	width: 100%;
 	height: 30%;
 	margin: auto;
   padding: 0;
@@ -145,4 +161,27 @@
 	padding-bottom: 0px;
 	margin-bottom: 2px;
 	margin-top: 2px;
+}
+
+.alert {
+  position: fixed;
+  left: 0;
+  bottom: 380px;
+  right: 0;
+  text-align: center;
+}
+
+.error {
+  position: fixed;
+  left: 0;
+  bottom: 380px;
+  right: 0;
+  text-align: center;
+}
+
+.pre {
+  border: 0px solid #ccc;
+  background: transparent;
+  padding: 20px;
+  display: none;
 }
