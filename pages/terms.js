@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import styles from '../components/Essentials.module.css'
+import { AiOutlineInstagram } from 'react-icons/ai'
+import { TiSocialTwitter } from "react-icons/ti"
+import { TiSocialVimeo } from "react-icons/ti"
+import { DiGithubBadge } from "react-icons/di"
 import {
 	ChakraProvider,
 	Container,
@@ -46,26 +50,48 @@ export default function Terms() {
     <link rel="manifest" href="/site.webmanifest" />
   </Head>
 
+  <ChakraProvider>
+    <Menu className={styles.menu}>
+      <Box
+        pos="fixed"
+        zIndex={20}
+        top="0"
+        bg="white"
+        w="100%"
+        p={3}
+        color="white"
+      >
+        <Stack direction="row">
+          <Badge
+            as="button"
+            variant="outline"
+            colorScheme="gray"
+            onClick={() => router.back()}
+          >
+            Back
+          </Badge>
+          <Badge as="button">
+            <Link href="https://hldtru.us/" target="_blank" rel="norefferer">
+              Webstore
+            </Link>
+          </Badge>
+          <Badge
+            as="button"
+            href="https://chakra-ui.com"
+            target="_blank"
+            rel="norefferer"
+          >
+            Archive
+          </Badge>
+          <Badge as="button" href="/archive" target="_blank" rel="norefferer">
+            Cart
+          </Badge>
+        </Stack>
+      </Box>
+    </Menu>
 
-<ChakraProvider>
-	<Menu className={styles.menu}>
-	<Box pos="fixed" zIndex={20} top="0" bg="white" w="100%" p={3} color="white">
-		<Stack direction="row">
-     <Badge as="button" variant="outline" colorScheme="gray" onClick={() => router.back()}>
-		 Back
-		 </Badge>
-     <Badge as="button">
-		 <Link href="https://hldtru.us/" target="_blank" rel="norefferer">Webstore</Link>
-		 </Badge>
-     <Badge as="button" href="https://chakra-ui.com" target="_blank" rel="norefferer">Archive</Badge>
-     <Badge as="button" href="/archive" target="_blank" rel="norefferer">Cart</Badge>
-     </Stack>
-		 </Box>
-	</Menu>
-
-  <Skeleton height="80px" isLoaded />
-  <Skeleton height="80px" isLoaded />
-
+    <Skeleton height="80px" isLoaded />
+    <Skeleton height="80px" isLoaded />
 
     <Container maxW="container.md">
       <Heading as="h4" size="sm">
@@ -98,12 +124,12 @@ export default function Terms() {
       </Heading>
       <Skeleton height="10px" isLoaded />
       <Text fontSize="xs">
-			Under no circumstances will your personal information be shared or sold
-			to third parties. By using our webstore, you agree to provide hldtru®
-			with your email, for future marketing & updates such as: New releases,
-			Sales, and all information that our shipping partners may provide to you
-			regarding your order(s) from hldtru®.
-       <Skeleton height="10px" isLoaded />
+        Under no circumstances will your personal information be shared or sold
+        to third parties. By using our webstore, you agree to provide hldtru®
+        with your email, for future marketing & updates such as: New releases,
+        Sales, and all information that our shipping partners may provide to you
+        regarding your order(s) from hldtru®.
+        <Skeleton height="10px" isLoaded />
         we respect your privacy, you have the option to opt-out at any time.
         <Skeleton height="10px" isLoaded />
         Manage (or){" "}
@@ -115,10 +141,8 @@ export default function Terms() {
         >
           Update Marketing Preferences.
         </Link>
-		  <Skeleton height="40px" isLoaded />
+        <Skeleton height="40px" isLoaded />
       </Text>
-
-
 
       <Heading as="h4" size="sm">
         PREORDER POLICY
@@ -127,10 +151,8 @@ export default function Terms() {
       <Text fontSize="xs">
         All prices are in $USD. Our Webstore currently accept Visa, Mastercard,
         American Express, Discover, Apple Pay, and PayPal.
-				<Skeleton height="40px" isLoaded />
+        <Skeleton height="40px" isLoaded />
       </Text>
-
-
 
       <Heading as="h4" size="sm">
         SHIPPING & TAXES
@@ -141,7 +163,7 @@ export default function Terms() {
         American Express, Discover, Apple Pay, and PayPal.
       </Text>
 
-       <Skeleton height="40px" isLoaded />
+      <Skeleton height="40px" isLoaded />
 
       <Heading as="h4" size="sm">
         RETURNS & EXCHANGES
@@ -153,13 +175,18 @@ export default function Terms() {
       </Text>
     </Container>
 
+    <Skeleton height="80px" isLoaded />
+    <Skeleton height="80px" isLoaded />
 
-		<Skeleton height="80px" isLoaded />
-		<Skeleton height="80px" isLoaded />
-
+    <Box pos="fixed" zIndex={30} bottom="0" bg="white" w="100%" p={3}>
+      <Stack direction="row">
+          <AiOutlineInstagram />
+            <TiSocialTwitter />
+          <TiSocialVimeo />
+          <DiGithubBadge />
+      </Stack>
+    </Box>
   </ChakraProvider>
-
-
 
   <footer className={styles.footer}>
     <Link href="/">
@@ -175,6 +202,7 @@ export default function Terms() {
     </a>
   </footer>
 </div>
+
 
   )
 }
