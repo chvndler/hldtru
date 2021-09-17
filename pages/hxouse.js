@@ -28,7 +28,7 @@ import {
 	Circle,
 } from "@chakra-ui/react"
 
-import Hxouseword from '../components/HxouseLocked'
+import Hxouseword from '../components/Hxouselocked'
 
 
 export default function Locked() {
