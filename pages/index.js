@@ -2,12 +2,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import { ChakraProvider, Box, Stack, Skeleton } from "@chakra-ui/react"
+import { AiOutlineInstagram } from 'react-icons/ai'
+import { TiSocialTwitter } from "react-icons/ti"
+import { TiSocialVimeo } from "react-icons/ti"
 
 
 
 export default function Home() {
   return (
-
 
 <div className={styles.container}>
 { /*--- Head Begin ---*/ }
@@ -23,8 +26,19 @@ export default function Home() {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+		<link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css" />
   </Head>
 { /*--- Head End ---*/ }
+
+
+  <div className={styles.backgroundImage}>
+		<Image
+		 src="https://cdn.hldtru.space/media/DOT-ORG-WEB.jpg"
+		 alt="cover image"
+		 layout="fill"
+		 objectFit="cover"
+		 quality="100" />
+	</div>
 
 { /*--- Logo Header ---*/ }
   <div className={styles.header}>
@@ -53,6 +67,8 @@ export default function Home() {
     </Link>
   </div>
 { /*--- Header End ---*/ }
+
+
 
 { /*--- SideNav Bar Start ---*/ }
   <div className={styles.sidenav}>
@@ -86,14 +102,15 @@ export default function Home() {
     </a>
     <Link href="/hxouse">
       <a>
-        <i>H</i>x<i>ouse</i>
+        HXOUSE
       </a>
     </Link>
 
     <Link href="/archive">
       <a>Archive®</a>
     </Link>
-    <br />
+
+    <Skeleton height="18px" isLoaded />
 
     <Link href="/locked">
       <a>
@@ -112,40 +129,31 @@ export default function Home() {
         <h5>Subscribe</h5>
       </a>
     </Link>
-    <br />
-    <Link href="/">
-      <a>
-        <h5>
-          <strong>Dev Only Below</strong>
-        </h5>
-      </a>
-    </Link>
 
-    <Link href="/privacy">
-      <a>
-        <h5>Privacy Policy</h5>
-      </a>
-    </Link>
 
-    <Link href="/terms">
-      <a>
-        <h5>Terms & Conditions</h5>
-      </a>
-    </Link>
+  <ChakraProvider>
+		<Box pos="relative" zIndex={30} bottom="0" bg="white" w="100%" pl={0} pt={4}>
+			<Stack direction="row">
 
-    <Link href="/cover">
-      <a>
-        <h5>Three.js Cover</h5>
-      </a>
-    </Link>
+			<Link href="https://instagram.com/hldtru" target="_blank" rel="noreferrer" passHref>
+				<AiOutlineInstagram />
+			</Link>
 
-    <Link href="/subscribe">
-      <a>
-        <h5>Subscribe</h5>
-      </a>
-    </Link>
+			<Link href="https://twitter.com/hldtru" target="_blank" rel="noreferrer" passHref>
+				<TiSocialTwitter />
+			</Link>
+
+			<Link href="https://vimeo.com/hldtru" target="_blank" rel="noreferrer" passHref>
+				<TiSocialVimeo />
+			</Link>
+
+			</Stack>
+		</Box>
+	</ChakraProvider>
+
   </div>
 { /*--- SideNav End ---*/ }
+
 
 { /*--- Footer ---*/ }
   <footer className={styles.footer}>

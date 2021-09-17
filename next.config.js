@@ -1,9 +1,9 @@
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
   reactStrictMode: true,
-  experimental:
-{
-		amp: {
-    skipValidation: true
+	assetPrefix: isProd ? 'https://cdn.hldtru.space' : '',
+	images: {
+   domains: ['cdn.hldtru.space'],
   }
- }
 }

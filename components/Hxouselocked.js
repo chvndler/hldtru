@@ -16,7 +16,7 @@ import { ChakraProvider,
 
 
 
-function Password() {
+function Hxouseword() {
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
 
@@ -24,7 +24,7 @@ function Password() {
     const onSubmit = async values => {
           await sleep(300)
 
-          if (values.password !== 'truth') {
+          if (values.password !== 'hxouse') {
               return { [FORM_ERROR]: 'Password is incorrect.' }
           }
     window.open("https://www.hldtru.us/collections/early-truth", "_blank");
@@ -36,7 +36,7 @@ function Password() {
       validate={values => {
         const errors = {}
         if (!values.password) {
-          errors.password = 'Early Access Password is Required.'
+          errors.password = 'Password is Required.'
         }
         return errors
       }
@@ -123,4 +123,4 @@ render={({
  )
 }
 
-export default Password
+export default Hxouseword

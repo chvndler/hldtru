@@ -28,6 +28,13 @@
   z-index: 200 !important;
 }
 
+.backgroundImage {
+	position: relative;
+	object-fit: fill;
+	padding: 0;
+	margin: 0;
+}
+
 .footer {
   color: #000;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -74,9 +81,10 @@
 }
 
 .sidenav a {
+	font-family: 'Scania Sans CY Headline', sans-serif;
+	font-weight: bold;
+	font-style: normal;
   font-size: 1.5rem !important;
-  font-weight: bold !important;
-  font-style: normal !important;
   line-height: 1;
   color: #000;
   padding-top: 0px;
@@ -94,12 +102,13 @@
 }
 
 .sidenav h5 {
+	font-family: 'Scania Sans CY', sans-serif;
+	font-weight: normal;
+	font-style: normal;
   font-size: 0.8rem !important;
-  font-weight: normal !important;
-  font-style: normal !important;
   color: #000;
   letter-spacing: 0rem !important;
-  line-height: 0.55 !important;
+  line-height: 1.2 !important;
 }
 
 /* All @media Rules */
@@ -117,7 +126,7 @@
   }
 
   .sidenav {
-			 top: 130px !important;
+		top: 130px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
