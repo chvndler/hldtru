@@ -10,6 +10,13 @@
   margin-bottom: 180px;
 }
 
+.cover {
+	position: relative;
+	z-index: -1 !important;
+	padding: 0;
+	margin: 0;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -30,7 +37,6 @@
 
 .backgroundImage {
 	position: relative;
-	object-fit: fill;
 	padding: 0;
 	margin: 0;
 }
@@ -121,8 +127,8 @@
   }
 
   .sidenav h5 {
-    font-size: 0.84rem !important;
-    line-height: 0.7 !important;
+    font-size: 0.8rem !important;
+    line-height: 1.1 !important;
   }
 
   .sidenav {

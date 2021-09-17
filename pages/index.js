@@ -6,6 +6,7 @@ import { ChakraProvider, Box, Stack, Skeleton } from "@chakra-ui/react"
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { TiSocialTwitter } from "react-icons/ti"
 import { TiSocialVimeo } from "react-icons/ti"
+import Mountain from '../public/mountain.jpg'
 
 
 
@@ -30,16 +31,15 @@ export default function Home() {
   </Head>
 { /*--- Head End ---*/ }
 
-
-  <div className={styles.backgroundImage}>
+<div className={styles.cover}>
 		<Image
-		 loader={custom}
-		 src="/d67b816f-0460-440b-3c09-d61d1b6f6000/public"
+		 src={Mountain}
 		 alt="cover image"
 		 layout="fill"
 		 objectFit="cover"
-		 quality="100" />
-	</div>
+		 quality="100"
+	/>
+</div>
 
 { /*--- Logo Header ---*/ }
   <div className={styles.header}>
