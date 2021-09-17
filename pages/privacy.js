@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../components/Essentials.module.css'
+import Socialfooter from '../components/Socialfooter'
 import {
 	ChakraProvider,
 	Container,
@@ -11,8 +12,8 @@ import {
 	Skeleton,
 	Link,
 } from "@chakra-ui/react"
-
 import Grid from '@react-css/grid'
+
 
 export default function Privacy() {
   return (
@@ -65,19 +66,7 @@ export default function Privacy() {
     </Container>
   </ChakraProvider>
 
-  <footer className={styles.footer}>
-    <Link href="/">
-      <a>Contact</a>
-    </Link>
-
-    <Link href="/">
-      <a>Terms & Conditions</a>
-    </Link>
-
-    <a href="https://instagram.com/hldtru" target="_blank" rel="noreferrer">
-      Instagram
-    </a>
-  </footer>
+<Socialfooter />
 </div>
 
   )

@@ -33,7 +33,8 @@ export default function Home() {
 
   <div className={styles.backgroundImage}>
 		<Image
-		 src="https://cdn.hldtru.space/media/DOT-ORG-WEB.jpg"
+		 loader={custom}
+		 src="/d67b816f-0460-440b-3c09-d61d1b6f6000/public"
 		 alt="cover image"
 		 layout="fill"
 		 objectFit="cover"
