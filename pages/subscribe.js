@@ -17,6 +17,10 @@ import {
 	Code,
 	Heading,
 	Box,
+	Skeleton,
+	FormControl,
+	FormHelperText,
+	FormLabel,
 	Stack,
 	Text,
 	Input,
@@ -45,7 +49,15 @@ export default function Subscribe() {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-		<link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css"
+    />
+    <script
+      type="text/javascript"
+      async
+      src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFJYfF"
+    ></script>
   </Head>
 
   <ChakraProvider>
@@ -59,37 +71,57 @@ export default function Subscribe() {
       w="100%"
     >
       <VStack w="100%">
-        <div className={styles.heading}>
-          Subscribe.
-        </div>
+        <Heading>Subscribe.</Heading>
 
-				<InputGroup size="sm" ra>
-	       <InputLeftAddon />
-        	<Input borderRadius="md" focusBorderColor="lime" size="sm" type="email" placeholder="" />
-       </InputGroup>
+        <Skeleton height="20px" isLoaded />
 
-        <Text fontSize="sm">
+        <FormControl id="email" width="350px" isRequired="true" size="small">
+          <InputGroup size="sm">
+            <Input
+              type="email"
+              size="sm"
+              placeholder="Email address"
+              focusBorderColor="lime"
+              borderRadius="lg"
+              pr="1rem"
+            />
+            <InputRightElement pr="0.2rem" width="4.5rem">
+              <Button h="1.58rem" size="sm">
+                Submit
+              </Button>
+            </InputRightElement>
+          </InputGroup>
+        </FormControl>
+
+        <Skeleton height="40px" isLoaded />
+
+        <Text fontSize="xs">
           <i>
-            power in <strong>truth</strong>
+            we respect your <strong>privacy</strong>
           </i>
           ®
+        </Text>
+        <Text fontSize="0.5rem">
+          <Link color="gray" className={styles.small_link} href="/privacy">
+            <a>Privacy Policy</a>
+          </Link>
         </Text>
       </VStack>
     </Center>
 
-
-		<Box pos="fixed" zIndex={30} bottom="0" bg="transparent" w="100%" p={4}>
-		<Center>
-      <Stack direction="row">
-        <AiOutlineInstagram />
-        <TiSocialTwitter />
-        <TiSocialVimeo />
-        <DiGithubBadge />
-      </Stack>
-		</Center>
+    <Box pos="fixed" zIndex={30} bottom="0" bg="transparent" w="100%" p={4}>
+      <Center>
+        <Stack direction="row">
+          <AiOutlineInstagram />
+          <TiSocialTwitter />
+          <TiSocialVimeo />
+          <DiGithubBadge />
+        </Stack>
+      </Center>
     </Box>
   </ChakraProvider>
 </div>
+
 
       )
     }

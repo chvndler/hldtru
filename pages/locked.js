@@ -11,6 +11,7 @@ import { TiSocialTwitter } from "react-icons/ti"
 import { TiSocialVimeo } from "react-icons/ti"
 import { DiGithubBadge } from "react-icons/di"
 import { ChakraProvider } from "@chakra-ui/react"
+import Socialfooter from '../components/Socialfooter'
 import {
 	InputGroup,
 	Code,
@@ -46,7 +47,10 @@ export default function Locked() {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-		<link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css"
+    />
   </Head>
 
   <ChakraProvider>
@@ -60,9 +64,7 @@ export default function Locked() {
       w="100%"
     >
       <VStack w="100%">
-        <div className={styles.heading}>
-          Early Access.
-        </div>
+        <div className={styles.heading}>Early Access.</div>
 
         <Password />
 
@@ -75,19 +77,11 @@ export default function Locked() {
       </VStack>
     </Center>
 
+    <Socialfooter />
 
-		<Box pos="fixed" zIndex={30} bottom="0" bg="transparent" w="100%" p={4}>
-		<Center>
-      <Stack direction="row">
-        <AiOutlineInstagram />
-        <TiSocialTwitter />
-        <TiSocialVimeo />
-        <DiGithubBadge />
-      </Stack>
-		</Center>
-    </Box>
   </ChakraProvider>
 </div>
+
 
       )
     }

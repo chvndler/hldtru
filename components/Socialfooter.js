@@ -15,10 +15,18 @@ export default function Socialfooter() {
 	 <Box pos="fixed" zIndex={30} bottom="0" bg="white" w="100%" p={4}>
 	 <Center>
 		 <Stack direction="row">
-			 <AiOutlineInstagram />
-			 <TiSocialTwitter />
-			 <TiSocialVimeo />
-			 <DiGithubBadge />
+			 <Link href="https://instagram.com/hldtru" target="_blank" rel="noreferrer" passHref>
+				 <AiOutlineInstagram />
+			 </Link>
+			 <Link href="https://twitter.com/hldtru" target="_blank" rel="noreferrer" passHref>
+				 <TiSocialTwitter />
+			 </Link>
+			 <Link href="https://vimeo.com/hldtru" target="_blank" rel="noreferrer" passHref>
+				 <TiSocialVimeo />
+			 </Link>
+			 <Link href="https://github.com/chvndler/hldtru" target="_blank" rel="noreferrer" passHref>
+				 <DiGithubBadge />
+			 </Link>
 		 </Stack>
 	 </Center>
 	 </Box>

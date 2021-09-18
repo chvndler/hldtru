@@ -94,6 +94,10 @@
   font-size: 2rem !important;
 }
 
+.small_link a:hover {
+	color: rgba(50, 50, 50, 0.5) !important;
+}
+
 @media only screen and (max-width: 1500px) {
 .container {
   padding-top: 10px;

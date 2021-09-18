@@ -49,7 +49,10 @@ export default function Locked() {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-		<link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css"
+    />
   </Head>
 
   <ChakraProvider>
@@ -63,10 +66,7 @@ export default function Locked() {
       w="100%"
     >
       <VStack w="100%">
-
-				<div className={styles.heading}>
-          HXOUSE®
-        </div>
+        <div className={styles.heading}>HXOUSE®</div>
 
         <Hxouseword />
 
@@ -76,12 +76,12 @@ export default function Locked() {
           </i>
           ®
         </Text>
-				<Skeleton height="40px" isLoaded />
-				<Text fontSize="sm">
-				<strong>Coming soon.</strong></Text>
+        <Skeleton height="40px" isLoaded />
+        <Text fontSize="sm">
+          <strong>Coming soon.</strong>
+        </Text>
       </VStack>
     </Center>
-
 
     <Box pos="fixed" zIndex={30} bottom="0" bg="white" w="100%" p={4}>
       <Stack direction="row" align="center">
@@ -93,8 +93,9 @@ export default function Locked() {
     </Box>
   </ChakraProvider>
 
-<Socialfooter />
+  <Socialfooter />
 </div>
+
 
 
       )

@@ -1,54 +1,94 @@
+import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import InputGroup from 'react-bootstrap/InputGroup';
-import FormControl from 'react-bootstrap/FormControl';
-import Form from 'react-bootstrap/Form';
-import Grid from '@react-css/grid'
-import Button from 'react-bootstrap/Button';
+import { render } from 'react-dom'
+import { useState } from 'react'
+import { Form, Field } from 'react-final-form'
+import { FORM_ERROR } from 'final-form'
 import styles from '../components/Essentials.module.css'
+import { AiOutlineInstagram } from 'react-icons/ai'
+import { TiSocialTwitter } from "react-icons/ti"
+import { TiSocialVimeo } from "react-icons/ti"
+import { DiGithubBadge } from "react-icons/di"
+import { ChakraProvider } from "@chakra-ui/react"
+import Socialfooter from '../components/Socialfooter'
+import {
+	InputGroup,
+	Code,
+	Heading,
+	Box,
+	Stack,
+	Text,
+	Skeleton,
+	Input,
+	InputRightElement,
+	Button,
+	Container,
+	VStack,
+	Center,
+	Square,
+	Circle,
+} from "@chakra-ui/react"
 
-	export default function Early() {
-	  return (
+import Access from '../components/Access'
 
-<div className={styles.canvas_form}>
-  <div className={styles.container_form}>
-    <div className={styles.center}>
-      <p className="h2">Early Access.</p>
-      <Grid className={styles.grid_gap_sm} gap="2em"></Grid>
 
-      <Form>
-        <InputGroup size="sm" className="mb-3">
-          <FormControl
-            type="password"
-            placeholder="Enter password"
-            as="input"
-            aria-label="Small"
-            aria-describedby="inputGroup-sizing-sm"
-          />
-          <InputGroup.Text
-            type="submit"
-            as="button"
-            variant="dark"
-            id="inputGroup-sizing-sm"
-          >
-            Submit
-          </InputGroup.Text>
-        </InputGroup>
+export default function Locked() {
+	return (
+<div className={styles.canvas_fluid}>
+  <Head>
+    <title>Early Access.</title>
+    <meta name="description" content="Web Application for hldtru®" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css"
+    />
+  </Head>
 
-        <Grid className={styles.grid_gap_sm} gap="2em"></Grid>
-        <p>
-          <small>
-            <i>power in </i>
-            <strong>
-              <i>truth</i>
-            </strong>
-            ®
-          </small>
-        </p>
-      </Form>
-    </div>
-  </div>
+  <ChakraProvider>
+    <Center
+      maxH="100vh"
+      h="100vh"
+      m="auto"
+      pl="14px"
+      pr="14px"
+      pb="60px"
+      w="100%"
+    >
+      <VStack w="100%">
+        <Heading size="2xl">
+				Early Access.
+				</Heading>
+
+       <Skeleton height="40px" isLoaded />
+
+        <Access />
+
+				<Skeleton height="20px" isLoaded />
+
+        <Text fontSize="sm">
+          <i>
+            power in <strong>truth</strong>
+          </i>
+          ®
+        </Text>
+      </VStack>
+    </Center>
+
+    <Socialfooter />
+
+  </ChakraProvider>
 </div>
 
-  )
-}
+
+      )
+    }
