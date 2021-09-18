@@ -1,22 +1,34 @@
 .container {
 	background-color: transparent;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+	margin: 0;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
+	width: 100vw;
   z-index: 0;
-	position: relative;
-  margin-top: 180px;
-  margin-bottom: 180px;
+	position: absolute;
+	overscroll: none !important;
+	overscroll-behavior: none !important;
+	touch-action: none;
+	scroll-boundary-behavior: none;
 }
 
 .cover {
 	position: relative;
+	background-attachment: fixed;
+	background-position: center;
 	z-index: 2 !important;
 	padding: 0;
 	margin: 0;
+	max-height: 100vh;
+	max-width: 100vw;
+	height: 100%;
+	width: 100%;
+	-webkit-overscroll: none !important;
+	-webkit-overscroll-behavior: none !important;
+	touch-action: none;
+	scroll-boundary-behavior: none;
 }
 
 .img {
@@ -30,6 +42,7 @@
   top: 10px;
   text-align: center;
   height: 50px;
+	z-index: 180;
 }
 
 .svg {
@@ -39,12 +52,6 @@
   vertical-align: middle;
   text-align: center !important;
   z-index: 200 !important;
-}
-
-.backgroundImage {
-	position: relative;
-	padding: 0;
-	margin: 0;
 }
 
 .footer {
@@ -141,10 +148,5 @@
 		top: 130px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
-  }
-
-  .container {
-    margin-top: 140px;
-    margin-bottom: 140px;
   }
 }

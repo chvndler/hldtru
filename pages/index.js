@@ -33,7 +33,7 @@ export default function Home() {
 
 <div className={styles.cover}>
 <Image
-	  src="https://cdn.hldtru.space/next.images/mountain.jpg"
+	  src="https://cdn.hldtru.space/next.images/mounts2.jpg"
 	  alt="cover image"
 	  layout="fill"
 	  objectFit="cover"
@@ -131,7 +131,7 @@ export default function Home() {
 
 
   <ChakraProvider>
-		<Box pos="relative" zIndex={30} bottom="0" bg="white" w="100%" pl={0} pt={6}>
+		<Box pos="relative" zIndex={30} bottom="0" bg="transparent" w="100%" pl={0} pt={6}>
 			<Stack direction="row">
 
 			<Link href="https://instagram.com/hldtru" target="_blank" rel="noreferrer" passHref>
