@@ -45,37 +45,34 @@ export default function Front() {
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
   </Head>
-  <ChakraProvider>
-    <Grid templateColumns="repeat(5, 1fr)" gap={4} m="auto">
-      <GridItem colSpan={2} h="100vh" bg="tomato">
-        <Flex>
-          <Box w="auto" h="100vh" bg="white" p="12px" margin="auto">
-            <Center h="100vh">WEBSTORE®</Center>
-          </Box>
-          <Spacer />
-          <Box w="auto" h="100vh" bg="white" p="12px">
-            <Center h="100vh">ARCHIVE</Center>
-          </Box>
-          <Spacer />
-          <Box w="auto" h="100vh" bg="white" p="12px">
-            <Center h="100vh">SHOP ALL</Center>
-          </Box>
-        </Flex>
-      </GridItem>
-    </Grid>
+
+<ChakraProvider>
+
+	<Grid templateColumns="repeat(5, 1fr)" gap={2}>
+
+	  <GridItem colSpan={2} h="100vh" z="1" bg="green">
+			<Center h="100vh">
+				<Heading>ARCHIVE®</Heading>
+			</Center>
+		</GridItem>
+
+	  <GridItem colStart={4} colEnd={6} h="100vh" z="1" bg="yellow">
+			<Center h="100vh">TWO</Center>
+		</GridItem>
+	</Grid>
 
 
 
     <Box pos="fixed" zIndex={30} bottom="0" bg="white" w="100%" p={4}>
+		<Center>
       <Stack direction="row">
         <AiOutlineInstagram />
         <TiSocialTwitter />
         <TiSocialVimeo />
         <DiGithubBadge />
       </Stack>
+		</Center>
     </Box>
-
-
 
   </ChakraProvider>
 </div>

@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
     "@chakra-ui/react": "^1.6.7",
+    "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@gltf-transform/core": "^0.12.11",
@@ -19,6 +21,7 @@
     "@types/react": "^17.0.21",
     "bootstrap": "^5.1.1",
     "csstype": "^3.0.9",
+    "emotion-theming": "^11.0.0",
     "final-form": "^4.20.2",
     "formik": "^2.2.9",
     "framer-motion": "^4.1.17",
@@ -26,6 +29,7 @@
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.33",
     "next": "^11.1.2",
+    "next-images": "^1.8.1",
     "next-transpile-modules": "^8.0.0",
     "next-videos": "^1.4.0",
     "react": "^17.0.2",

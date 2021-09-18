@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import { ChakraProvider, Box, Stack, Skeleton } from "@chakra-ui/react"
+import { ChakraProvider, Container, Box, Stack, Skeleton } from "@chakra-ui/react"
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { TiSocialTwitter } from "react-icons/ti"
 import { TiSocialVimeo } from "react-icons/ti"
@@ -32,13 +32,13 @@ export default function Home() {
 { /*--- Head End ---*/ }
 
 <div className={styles.cover}>
-		<Image
-		 src={Mountain}
-		 alt="cover image"
-		 layout="fill"
-		 objectFit="cover"
-		 quality="100"
-	/>
+<Image
+	  src="https://cdn.hldtru.space/next.images/mountain.jpg"
+	  alt="cover image"
+	  layout="fill"
+	  objectFit="cover"
+	  quality="100"
+/>
 </div>
 
 { /*--- Logo Header ---*/ }
@@ -68,8 +68,6 @@ export default function Home() {
     </Link>
   </div>
 { /*--- Header End ---*/ }
-
-
 
 { /*--- SideNav Bar Start ---*/ }
   <div className={styles.sidenav}>
@@ -133,7 +131,7 @@ export default function Home() {
 
 
   <ChakraProvider>
-		<Box pos="relative" zIndex={30} bottom="0" bg="white" w="100%" pl={0} pt={4}>
+		<Box pos="relative" zIndex={30} bottom="0" bg="white" w="100%" pl={0} pt={6}>
 			<Stack direction="row">
 
 			<Link href="https://instagram.com/hldtru" target="_blank" rel="noreferrer" passHref>
@@ -142,10 +140,6 @@ export default function Home() {
 
 			<Link href="https://twitter.com/hldtru" target="_blank" rel="noreferrer" passHref>
 				<TiSocialTwitter />
-			</Link>
-
-			<Link href="https://vimeo.com/hldtru" target="_blank" rel="noreferrer" passHref>
-				<TiSocialVimeo />
 			</Link>
 
 			</Stack>

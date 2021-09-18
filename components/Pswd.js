@@ -77,8 +77,6 @@ render={({
     <span className={styles.alert}>
 
   <Badge
-    variant="subtle"
-    colorScheme="gray"
     m="auto"
     zIndex="1000"
     >{meta.error}</Badge></span>}
@@ -89,7 +87,7 @@ render={({
           {submitError && <span className={styles.error}>
 
           <Badge
-              variant="subtle"
+              variant="outline"
               colorScheme="gray"
               m="auto"
               zIndex="1002"
@@ -102,7 +100,7 @@ render={({
                height="28px"
                width="100%"
                mt={1}
-               border="0px"
+               border="1px"
                borderColor="gray"
                type="submit"
                disabled={submitting}

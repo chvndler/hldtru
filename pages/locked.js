@@ -33,7 +33,7 @@ import Password from '../components/Pswd'
 
 export default function Locked() {
 	return (
-<div className={styles.canvas_fluid}>
+<div className={styles.canvas_fluidblue}>
   <Head>
     <title>Early Access.</title>
     <meta name="description" content="Web Application for hldtru®" />
@@ -46,6 +46,7 @@ export default function Locked() {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+		<link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css" />
   </Head>
 
   <ChakraProvider>
@@ -59,9 +60,9 @@ export default function Locked() {
       w="100%"
     >
       <VStack w="100%">
-        <Heading as="h2" size="xl" mb="3">
+        <div className={styles.heading}>
           Early Access.
-        </Heading>
+        </div>
 
         <Password />
 
@@ -75,31 +76,18 @@ export default function Locked() {
     </Center>
 
 
-    <Box pos="fixed" zIndex={30} bottom="0" bg="white" w="100%" p={4}>
-      <Stack direction="row" align="center">
+		<Box pos="fixed" zIndex={30} bottom="0" bg="transparent" w="100%" p={4}>
+		<Center>
+      <Stack direction="row">
         <AiOutlineInstagram />
         <TiSocialTwitter />
         <TiSocialVimeo />
         <DiGithubBadge />
       </Stack>
+		</Center>
     </Box>
   </ChakraProvider>
-
-  <footer className={styles.footer}>
-    <Link href="/contact">
-      <a>Contact</a>
-    </Link>
-
-    <Link href="/terms">
-      <a>Terms & Conditions</a>
-    </Link>
-
-    <a href="https://instagram.com/hldtru" target="_blank" rel="noreferrer">
-      Instagram
-    </a>
-  </footer>
 </div>
-
 
       )
     }

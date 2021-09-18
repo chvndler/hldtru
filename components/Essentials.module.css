@@ -10,6 +10,7 @@
   width: 100%;
 	height: 100%;
   margin: 0;
+	background-color: transparent;
 }
 
 .form {
@@ -33,6 +34,12 @@
   margin: 0;
 }
 
+.canvas_fluidblue {
+	background-color: #f9f9f9 !important;
+	padding: 0;
+  margin: 0;
+}
+
 .container {
   padding-top: 10px;
   padding-left: 300px;
@@ -41,9 +48,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-	z-index: 1;
 	height: 100%;
   margin: 0;
+	background-color: transparent;
+	position: relative;
 }
 
 .container_form {
@@ -79,6 +87,13 @@
   margin: 0;
 }
 
+.heading {
+	font-family: 'Scania Sans CY Headline', sans-serif;
+	font-weight: bold;
+	font-style: normal;
+  font-size: 2rem !important;
+}
+
 @media only screen and (max-width: 1500px) {
 .container {
   padding-top: 10px;
@@ -106,6 +121,12 @@
  }
  .footer {
    display: none;
+ }
+ .heading {
+ 	font-family: 'Scania Sans CY Headline', sans-serif;
+ 	font-weight: bold;
+ 	font-style: normal;
+  font-size: 1.3rem !important;
  }
 }
 

@@ -19,7 +19,14 @@ export default function Archive() {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
-			<Image src={Background} alt="cover image" layout="fill" objectFit="cover" placeholder="blur" quality="100" />
+			<Image
+			  src="https://cdn.hldtru.space/next.images/mountain.jpg"
+			  alt="cover image"
+				layout="fill"
+				objectFit="cover"
+				placeholder="empty"
+				quality="100"
+				/>
 
 			<div className={styles.header}>
 				<Link href="/">
