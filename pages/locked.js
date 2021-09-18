@@ -33,7 +33,7 @@ import Password from '../components/Pswd'
 
 export default function Locked() {
 	return (
-<div className={styles.canvas_fluidblue}>
+<div className={styles.canvas_fluid}>
   <Head>
     <title>Early Access.</title>
     <meta name="description" content="Web Application for hldtru®" />

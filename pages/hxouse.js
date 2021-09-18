@@ -10,6 +10,7 @@ import { AiOutlineInstagram } from 'react-icons/ai'
 import { TiSocialTwitter } from "react-icons/ti"
 import { TiSocialVimeo } from "react-icons/ti"
 import { DiGithubBadge } from "react-icons/di"
+import Socialfooter from '../components/Socialfooter'
 import { ChakraProvider } from "@chakra-ui/react"
 import {
 	InputGroup,
@@ -17,6 +18,7 @@ import {
 	Heading,
 	Box,
 	Stack,
+	Skeleton,
 	Text,
 	Input,
 	InputRightElement,
@@ -36,7 +38,7 @@ export default function Locked() {
 
 <div className={styles.canvas_fluid}>
   <Head>
-    <title>Early Access.</title>
+    <title>Hxouse.</title>
     <meta name="description" content="Web Application for hldtru®" />
     <meta
       name="viewport"
@@ -47,6 +49,7 @@ export default function Locked() {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+		<link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css" />
   </Head>
 
   <ChakraProvider>
@@ -60,18 +63,22 @@ export default function Locked() {
       w="100%"
     >
       <VStack w="100%">
-        <Heading as="h2" size="xl" mb="3">
-          Early Access.
-        </Heading>
+
+				<div className={styles.heading}>
+          HXOUSE®
+        </div>
 
         <Hxouseword />
 
         <Text fontSize="sm">
           <i>
-            power in <strong>truth</strong>
+            an exploration of <strong>ideas</strong>
           </i>
           ®
         </Text>
+				<Skeleton height="40px" isLoaded />
+				<Text fontSize="sm">
+				<strong>Coming soon.</strong></Text>
       </VStack>
     </Center>
 
@@ -86,19 +93,7 @@ export default function Locked() {
     </Box>
   </ChakraProvider>
 
-  <footer className={styles.footer}>
-    <Link href="/contact">
-      <a>Contact</a>
-    </Link>
-
-    <Link href="/terms">
-      <a>Terms & Conditions</a>
-    </Link>
-
-    <a href="https://instagram.com/hldtru" target="_blank" rel="noreferrer">
-      Instagram
-    </a>
-  </footer>
+<Socialfooter />
 </div>
 
 

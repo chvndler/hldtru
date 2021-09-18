@@ -6,8 +6,12 @@ import {
 	ChakraProvider,
 	Container,
 	Box,
+	Flex,
+	Spacer,
+	Badge,
 	Center,
 	Text,
+	Button,
 	Heading,
 	Skeleton,
 	Link,
@@ -33,11 +37,24 @@ export default function Privacy() {
     <link rel="manifest" href="/site.webmanifest" />
   </Head>
 
-  <Grid className={styles.grid_gap} gap="2em"></Grid>
-  <Grid className={styles.grid_gap} gap="2em"></Grid>
-
   <ChakraProvider>
-    <Container maxW="container.md">
+
+	<Flex>
+	  <Box p="2" h="auto" width="300px" bg="transparent">
+	    <Button size="md" h="22px" pl="3" pr="3" mr="1" border="1px" borderRadius="xl">Back</Button>
+			<Button size="md" h="22px" pl="3" pr="3" mr="1" border="1px" borderRadius="xl">Shop</Button>
+			<Button size="md" h="22px" pl="3" pr="3" border="1px" borderRadius="xl">Archive</Button>
+	  </Box>
+	  <Spacer />
+	  <Box p="2" h="auto" w="100px" align="right" bg="transparent">
+	    <Button size="md" h="22px" pl="3" pr="3" mr="1" border="1px" borderRadius="xl">Cart</Button>
+	  </Box>
+	</Flex>
+
+
+
+
+    <Container pt="200" maxW="container.md">
       <Heading as="h4" size="lg">
         Privacy Policy
       </Heading>
@@ -49,8 +66,8 @@ export default function Privacy() {
         Sales, and all information that our shipping partners may provide to you
         regarding your order(s) from hldtru®.
         <Skeleton height="12px" isLoaded />
-        <Text fontSize="xs" as="samp">
-          we respect your privacy, you have the option to opt-out at any time.
+        <Text fontSize="sm">
+          We respect your privacy, you have the option to opt-out at any time.
           <Skeleton height="12px" isLoaded />
           Manage (or){" "}
           <Link

@@ -12,14 +12,16 @@ import styles from '../components/Essentials.module.css'
 export default function Socialfooter() {
   return (
  <ChakraProvider>
-  <Box pos="fixed" zIndex={30} bottom="0" bg="white" w="100%" p={4}>
-    <Stack direction="row" align="center">
-      <AiOutlineInstagram />
-      <TiSocialTwitter />
-      <TiSocialVimeo />
-      <DiGithubBadge />
-    </Stack>
-  </Box>
+	 <Box pos="fixed" zIndex={30} bottom="0" bg="white" w="100%" p={4}>
+	 <Center>
+		 <Stack direction="row">
+			 <AiOutlineInstagram />
+			 <TiSocialTwitter />
+			 <TiSocialVimeo />
+			 <DiGithubBadge />
+		 </Stack>
+	 </Center>
+	 </Box>
  </ChakraProvider>
  )
 }

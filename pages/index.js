@@ -9,8 +9,8 @@ import { TiSocialVimeo } from "react-icons/ti"
 import Mountain from '../public/mountain.jpg'
 
 
-
 export default function Home() {
+
   return (
 
 <div className={styles.container}>
@@ -33,7 +33,7 @@ export default function Home() {
 
 <div className={styles.cover}>
 <Image
-	  src="https://cdn.hldtru.space/next.images/mounts2.jpg"
+	  src="https://cdn.hldtru.space/next.images/juki.gif"
 	  alt="cover image"
 	  layout="fill"
 	  objectFit="cover"
