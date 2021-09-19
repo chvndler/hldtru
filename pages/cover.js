@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Stage, } from '@react-three/drei'
 import styles from '../styles/Model.module.css'
 import Layout from '../components/Layout'
+import { ChakraProvider, Center, Box, } from "@chakra-ui/react"
 
 export default function Cover() {
   const ref = useRef()
@@ -18,7 +19,13 @@ export default function Cover() {
 			 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 			 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 			 <link rel="manifest" href="/site.webmanifest" />
+
+				 <link
+		       rel="stylesheet"
+		       href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css"
+		     />
     </Head>
+
 
     <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
       <Suspense fallback={null}>
@@ -29,6 +36,11 @@ export default function Cover() {
       </Suspense>
       <OrbitControls ref={ref} />
     </Canvas>
+
+
   </div>
+
+
+
   )
 }

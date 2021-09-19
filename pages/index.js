@@ -13,35 +13,41 @@ export default function Home() {
 
   return (
 
-<div className={styles.container}>
-{ /*--- Head Begin ---*/ }
+ <div className={styles.container}>
   <Head>
     <title>hldtru®</title>
     <meta name="description" content="Web Application for hldtru®" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta property="og:title" content="hldtru® Web App" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta property="og:title" content="hldtru® Web App" />
     <meta property="og:url" content="https://www.hldtru.co/" />
-    <meta property="og:image" content="https://s3.us-east-2.amazonaws.com/truth.drop/assets/social.jpg" />
+    <meta
+      property="og:image"
+      content="https://s3.us-east-2.amazonaws.com/truth.drop/assets/social.jpg"
+    />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-		<link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css"
+    />
   </Head>
-{ /*--- Head End ---*/ }
 
-<div className={styles.cover}>
-<Image
-	  src="https://imagedelivery.net/eVB3RxjH4UaV10j-Iiprsg/cde667ef-ff78-47b5-0dc9-6738d9df8d00/public"
-	  alt="cover image"
-	  layout="fill"
-	  objectFit="cover"
-	  quality="100"
-/>
-</div>
+  <div className={styles.cover}>
+    <Image
+      src="https://imagedelivery.net/eVB3RxjH4UaV10j-Iiprsg/cde667ef-ff78-47b5-0dc9-6738d9df8d00/public"
+      alt="cover image"
+      layout="fill"
+      objectFit="cover"
+      quality="100"
+    />
+  </div>
 
-{ /*--- Logo Header ---*/ }
   <div className={styles.header}>
     <Link href="/">
       <a className={styles.svg}>
@@ -67,9 +73,7 @@ export default function Home() {
       </a>
     </Link>
   </div>
-{ /*--- Header End ---*/ }
 
-{ /*--- SideNav Bar Start ---*/ }
   <div className={styles.sidenav}>
     <a
       href="https://hldtru.us/collections/new"
@@ -100,9 +104,7 @@ export default function Home() {
       Shop All
     </a>
     <Link href="/hxouse">
-      <a>
-        HXOUSE
-      </a>
+      <a>HXOUSE</a>
     </Link>
 
     <Link href="/archive">
@@ -111,7 +113,7 @@ export default function Home() {
 
     <Skeleton height="18px" isLoaded />
 
-    <Link href="/locked">
+    <Link href="/early">
       <a>
         <h5>Early Access</h5>
       </a>
@@ -129,28 +131,39 @@ export default function Home() {
       </a>
     </Link>
 
+    <ChakraProvider>
+      <Box
+        pos="relative"
+        zIndex={30}
+        bottom="0"
+        bg="transparent"
+        w="100%"
+        pl={0}
+        pt={6}
+      >
+        <Stack direction="row">
+          <Link
+            href="https://instagram.com/hldtru"
+            target="_blank"
+            rel="noreferrer"
+            passHref
+          >
+            <AiOutlineInstagram />
+          </Link>
 
-  <ChakraProvider>
-		<Box pos="relative" zIndex={30} bottom="0" bg="transparent" w="100%" pl={0} pt={6}>
-			<Stack direction="row">
-
-			<Link href="https://instagram.com/hldtru" target="_blank" rel="noreferrer" passHref>
-				<AiOutlineInstagram />
-			</Link>
-
-			<Link href="https://twitter.com/hldtru" target="_blank" rel="noreferrer" passHref>
-				<TiSocialTwitter />
-			</Link>
-
-			</Stack>
-		</Box>
-	</ChakraProvider>
-
+          <Link
+            href="https://twitter.com/hldtru"
+            target="_blank"
+            rel="noreferrer"
+            passHref
+          >
+            <TiSocialTwitter />
+          </Link>
+        </Stack>
+      </Box>
+    </ChakraProvider>
   </div>
-{ /*--- SideNav End ---*/ }
 
-
-{ /*--- Footer ---*/ }
   <footer className={styles.footer}>
     <Link href="/contact">
       <a>Contact</a>
@@ -160,12 +173,12 @@ export default function Home() {
       <a>Terms & Conditions</a>
     </Link>
 
-<Link href="/privacy">
-    <a>Privacy Policy</a>
+    <Link href="/privacy">
+      <a>Privacy Policy</a>
     </Link>
   </footer>
-{ /*--- End Footer ---*/ }
-</div>
+ </div>
+
 
   )
 }
