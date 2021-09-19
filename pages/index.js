@@ -33,7 +33,7 @@ export default function Home() {
 
 <div className={styles.cover}>
 <Image
-	  src="https://cdn.hldtru.space/next.images/juki.gif"
+	  src="https://imagedelivery.net/eVB3RxjH4UaV10j-Iiprsg/cde667ef-ff78-47b5-0dc9-6738d9df8d00/public"
 	  alt="cover image"
 	  layout="fill"
 	  objectFit="cover"
