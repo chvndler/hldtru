@@ -10,6 +10,7 @@ import { AiOutlineInstagram } from 'react-icons/ai'
 import { TiSocialTwitter } from "react-icons/ti"
 import { TiSocialVimeo } from "react-icons/ti"
 import { DiGithubBadge } from "react-icons/di"
+import { subscribe } from "klaviyo-subscribe"
 import { extendTheme } from "@chakra-ui/react"
 import { ChakraProvider } from "@chakra-ui/react"
 import {
@@ -36,6 +37,7 @@ import {
 
 
 export default function Subscribe() {
+
 	const theme = extendTheme({
   colors: {
     brand: {
@@ -99,27 +101,33 @@ export default function Subscribe() {
         <Heading>Subscribe.</Heading>
 
         <Skeleton height="20px" isLoaded />
-
-        <FormControl id="email" width="350px" isRequired="true" size="small">
+				<form>
+        <FormControl id="email_signup" action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" width="350px" isRequired="true" size="small">
           <InputGroup size="sm">
             <Input
-              type="email"
-              size="sm"
-              placeholder="Email address"
-              focusBorderColor="lime"
-              borderRadius="lg"
-              pr="1rem"
+              type="hidden"
+							name="g"
+							value="SchTjq"
             />
+						<Input
+							id="k_id_email"
+							type="email"
+							value=""
+							size="sm"
+							placeholder="Email address"
+							focusBorderColor="lime"
+							borderRadius="lg"
+							pr="1rem"
+						/>
             <InputRightElement pr="0.2rem" width="4.5rem">
-              <Button variant="hldtru" h="1.58rem" size="sm">
+              <Button type="submit" variant="hldtru" h="1.58rem" size="sm">
                 Submit
               </Button>
             </InputRightElement>
           </InputGroup>
         </FormControl>
-
+</form>
         <Skeleton height="40px" isLoaded />
-
         <Text fontSize="xs">
           <i>
             we respect your <strong>privacy</strong>

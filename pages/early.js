@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { render } from 'react-dom'
 import { useState } from 'react'
 import { Form, Field } from 'react-final-form'
@@ -55,7 +56,22 @@ export default function Locked() {
   </Head>
 
   <ChakraProvider>
+	<div className={styles.cover}>
+		<Image
+			src="https://cdn.hldtru.space/next.images/tiffany.png"
+			alt="cover image"
+			layout="fill"
+			objectFit="cover"
+			quality="100"
+			placeholder="blur"
+			blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
+		/>
+	</div>
+
+
+
     <Center
+			bg="teal.200"
       maxH="100vh"
       h="100vh"
       m="auto"

@@ -55,6 +55,7 @@ export default function Locked() {
 
   <ChakraProvider>
     <Center
+			bg="teal.200"
       maxH="100vh"
       h="100vh"
       m="auto"

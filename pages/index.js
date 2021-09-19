@@ -40,11 +40,13 @@ export default function Home() {
 
   <div className={styles.cover}>
     <Image
-      src="https://imagedelivery.net/eVB3RxjH4UaV10j-Iiprsg/cde667ef-ff78-47b5-0dc9-6738d9df8d00/public"
+      src="https://cdn.hldtru.space/next.images/tiffany.png"
       alt="cover image"
       layout="fill"
       objectFit="cover"
       quality="100"
+			placeholder="blur"
+			blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
     />
   </div>
 
