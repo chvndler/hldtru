@@ -40,7 +40,7 @@ export default function Home() {
 
   <div className={styles.cover}>
     <Image
-      src="https://cdn.hldtru.space/next.images/tiffany.png"
+      src="https://cdn.hldtru.space/next.images/hqsnow.jpg"
       alt="cover image"
       layout="fill"
       objectFit="cover"
