@@ -18,10 +18,10 @@ export default function Home() {
   <Head>
     <title>hldtru®</title>
     <meta name="description" content="Web Application for hldtru®" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta property="og:title" content="hldtru® Web App" />
+    <meta property="og:url" content="https://www.hldtru.co/" />
+    <meta property="og:image" content="https://s3.us-east-2.amazonaws.com/truth.drop/assets/social.jpg" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
