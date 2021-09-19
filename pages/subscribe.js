@@ -10,6 +10,7 @@ import { AiOutlineInstagram } from 'react-icons/ai'
 import { TiSocialTwitter } from "react-icons/ti"
 import { TiSocialVimeo } from "react-icons/ti"
 import { DiGithubBadge } from "react-icons/di"
+import { extendTheme } from "@chakra-ui/react"
 import { ChakraProvider } from "@chakra-ui/react"
 import {
 	InputGroup,
@@ -35,7 +36,31 @@ import {
 
 
 export default function Subscribe() {
+	const theme = extendTheme({
+  colors: {
+    brand: {
+      100: "#FFF",
+      200: "#000",
+      300: "#5AFF15",
+			400: "#9D75CB"
+    },
+  },
+	components: {
+		Button: {
+			variants: {
+				"hldtru": {
+					bg: "#5AFF15",
+					color: "#231f20",
+					borderColor: "#f2f2f2",
+					borderWidth: "1px",
+				},
+			},
+		},
+	},
+})
+
 	return (
+
 <div className={styles.canvas_fluid}>
   <Head>
     <title>Subscribe.</title>
@@ -60,7 +85,7 @@ export default function Subscribe() {
     ></script>
   </Head>
 
-  <ChakraProvider>
+  <ChakraProvider theme={theme}>
     <Center
       maxH="100vh"
       h="100vh"
@@ -86,7 +111,7 @@ export default function Subscribe() {
               pr="1rem"
             />
             <InputRightElement pr="0.2rem" width="4.5rem">
-              <Button h="1.58rem" size="sm">
+              <Button variant="hldtru" h="1.58rem" size="sm">
                 Submit
               </Button>
             </InputRightElement>

@@ -28,6 +28,8 @@ import {
 } from "@chakra-ui/react"
 import Grid from '@react-css/grid'
 
+import Nav from '../components/Nav'
+
 
 
 export default function Terms() {
@@ -51,44 +53,8 @@ export default function Terms() {
   </Head>
 
   <ChakraProvider>
-    <Menu className={styles.menu}>
-      <Box
-        pos="fixed"
-        zIndex={20}
-        top="0"
-        bg="white"
-        w="100%"
-        p={3}
-        color="white"
-      >
-        <Stack direction="row">
-          <Badge
-            as="button"
-            variant="outline"
-            colorScheme="gray"
-            onClick={() => router.back()}
-          >
-            Back
-          </Badge>
-          <Badge as="button">
-            <Link href="https://hldtru.us/" target="_blank" rel="norefferer">
-              Webstore
-            </Link>
-          </Badge>
-          <Badge
-            as="button"
-            href="https://chakra-ui.com"
-            target="_blank"
-            rel="norefferer"
-          >
-            Archive
-          </Badge>
-          <Badge as="button" href="/archive" target="_blank" rel="norefferer">
-            Cart
-          </Badge>
-        </Stack>
-      </Box>
-    </Menu>
+
+    <Nav />
 
     <Skeleton height="80px" isLoaded />
     <Skeleton height="80px" isLoaded />

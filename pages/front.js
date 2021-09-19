@@ -1,12 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../components/Essentials.module.css'
-import { AiOutlineInstagram } from 'react-icons/ai'
-import { TiSocialTwitter } from "react-icons/ti"
-import { TiSocialVimeo } from "react-icons/ti"
-import { DiGithubBadge } from "react-icons/di"
+import Socialfooter from '../components/Socialfooter'
 import { ChakraProvider } from "@chakra-ui/react"
+import { extendTheme } from "@chakra-ui/react"
+import { createBreakpoints } from "@chakra-ui/theme-tools"
 import {
 	InputGroup,
 	Code,
@@ -31,14 +31,24 @@ import {
 
 
 export default function Front() {
+	const breakpoints = createBreakpoints({
+  sm: "320px",
+  md: "768px",
+  lg: "960px",
+  xl: "1200px",
+})
+
+const theme = extendTheme({ breakpoints })
 	return (
 
 <div className={styles.canvas_fluid}>
-
   <Head>
     <title>Early Access.</title>
     <meta name="description" content="Web Application for hldtru®" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -46,35 +56,165 @@ export default function Front() {
     <link rel="manifest" href="/site.webmanifest" />
   </Head>
 
-<ChakraProvider>
+  <ChakraProvider>
+    <Container h="65vh" maxW="60%">
+      <Center h="100%">
+        <Image
+          src="https://cdn.hldtru.space/next.images/snow.jpg"
+          alt="Archive1"
+          width={500}
+          height={400}
+          quality="100"
+        />
+      </Center>
+    </Container>
+    <Container
+      maxW="70%"
+      className={styles.midmenu}
+      centerContent
+      overflow="auto"
+      whiteSpace="nowrap"
+    >
+      <Box
+        width={{ base: "100%", sm: "100%", md: "100%" }}
+        bg="transparent"
+        p={2}
+        color="white"
+      >
+        <Grid templateColumns="repeat(7, 1fr)" gap={2}>
+          <Box
+            as="button"
+            w="100%"
+            borderRadius="8"
+            p="2"
+            h="8"
+            borderWidth="1px"
+            borderColor="black"
+            bg="transparent"
+            color="black"
+          >
+            <Link href="/">
+              <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
+                <a>DAYS OF TRUTH©</a>
+              </Text>
+            </Link>
+          </Box>
 
-	<Grid templateColumns="repeat(5, 1fr)" gap={2}>
+          <Box
+            as="button"
+            w="auto"
+            borderRadius="8"
+            p="2"
+            h="8"
+            borderWidth="1px"
+            borderColor="black"
+            bg="transparent"
+            color="black"
+          >
+            <Link href="/">
+              <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
+                <a>COPENHAGEN® RACING</a>
+              </Text>
+            </Link>
+          </Box>
 
-	  <GridItem colSpan={2} h="100vh" z="1" bg="green">
-			<Center h="100vh">
-				<Heading>ARCHIVE®</Heading>
-			</Center>
-		</GridItem>
+          <Box
+            as="button"
+            w="auto"
+            borderRadius="8"
+            p="2"
+            h="8"
+            borderWidth="1px"
+            borderColor="black"
+            bg="transparent"
+            color="black"
+          >
+            <Link href="/">
+              <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
+                <a>V2 TRAINING</a>
+              </Text>
+            </Link>
+          </Box>
 
-	  <GridItem colStart={4} colEnd={6} h="100vh" z="1" bg="yellow">
-			<Center h="100vh">TWO</Center>
-		</GridItem>
-	</Grid>
+          <Box
+            as="button"
+            w="auto"
+            borderRadius="8"
+            p="2"
+            h="8"
+            borderWidth="1px"
+            borderColor="black"
+            bg="transparent"
+            color="black"
+          >
+            <Link href="/">
+              <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
+                <a>POWERED BY TRUTH</a>
+              </Text>
+            </Link>
+          </Box>
 
+          <Box
+            as="button"
+            w="100%"
+            borderRadius="8"
+            p="2"
+            h="8"
+            borderWidth="1px"
+            borderColor="black"
+            bg="transparent"
+            color="black"
+          >
+            <Link href="/">
+              <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
+                <a>PRESEASON</a>
+              </Text>
+            </Link>
+          </Box>
 
+          <Box
+            as="button"
+            w="100%"
+            borderRadius="8"
+            p="2"
+            h="8"
+            borderWidth="1px"
+            borderColor="black"
+            bg="transparent"
+            color="black"
+          >
+            <Link href="/">
+              <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
+                <a>TRUTH BE TOLD</a>
+              </Text>
+            </Link>
+          </Box>
 
-    <Box pos="fixed" zIndex={30} bottom="0" bg="white" w="100%" p={4}>
-		<Center>
-      <Stack direction="row">
-        <AiOutlineInstagram />
-        <TiSocialTwitter />
-        <TiSocialVimeo />
-        <DiGithubBadge />
-      </Stack>
-		</Center>
-    </Box>
+          <Box
+            as="button"
+            w="100%"
+            borderRadius="8"
+            p="2"
+            h="8"
+            borderWidth="1px"
+            mr="2px"
+            borderColor="black"
+            bg="transparent"
+            color="black"
+          >
+            <Link href="/">
+              <Text fontSize="xs" m="0" p="0" fontWeight="bold">
+                <a>COLLECTION NAME</a>
+              </Text>
+            </Link>
+          </Box>
+        </Grid>
+      </Box>
+    </Container>
 
+    <Socialfooter />
   </ChakraProvider>
 </div>
+
   )
 }
