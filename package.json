@@ -17,7 +17,7 @@
     "@gltf-transform/core": "^0.12.12",
     "@plaiceholder/next": "^2.1.0",
     "@react-css/grid": "^1.4.5",
-    "@react-three/drei": "^7.8.4",
+    "@react-three/drei": "^7.8.5",
     "@react-three/fiber": "^7.0.7",
     "@types/react": "^17.0.21",
     "blurhash": "^1.1.4",
