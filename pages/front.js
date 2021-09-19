@@ -7,6 +7,7 @@ import Socialfooter from '../components/Socialfooter'
 import { ChakraProvider } from "@chakra-ui/react"
 import { extendTheme } from "@chakra-ui/react"
 import { createBreakpoints } from "@chakra-ui/theme-tools"
+import Time from '../components/Time'
 import {
 	InputGroup,
 	Code,
@@ -18,6 +19,7 @@ import {
 	GridItem,
 	Stack,
 	Text,
+	Skeleton,
 	Input,
 	InputRightElement,
 	Button,
@@ -43,7 +45,7 @@ const theme = extendTheme({ breakpoints })
 
 <div className={styles.canvas_fluid}>
   <Head>
-    <title>Early Access.</title>
+    <title>Archive.</title>
     <meta name="description" content="Web Application for hldtru®" />
     <meta
       name="viewport"
@@ -57,17 +59,20 @@ const theme = extendTheme({ breakpoints })
   </Head>
 
   <ChakraProvider>
+    <Time />
     <Container h="65vh" maxW="60%">
-      <Center h="100%">
-        <Image
-          src="https://cdn.hldtru.space/next.images/snow.jpg"
-          alt="Archive1"
-          width={500}
-          height={400}
-          quality="100"
-        />
+      <Center h="10%">
+        <Heading fontSize="2xl">HOLDTRUE®</Heading>
+        <Text fontSize="2xl">
+          <i>A</i>rchive.
+        </Text>
       </Center>
     </Container>
+    <Text fontSize="xl" align="center" mb="20px">
+      Archive is currently being updated.
+      <br />
+      Please check back soon.
+    </Text>
     <Container
       maxW="70%"
       className={styles.midmenu}
@@ -215,6 +220,8 @@ const theme = extendTheme({ breakpoints })
     <Socialfooter />
   </ChakraProvider>
 </div>
+
+
 
   )
 }

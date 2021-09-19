@@ -16,6 +16,7 @@ import {
 	Square,
 	Circle,
 } from "@chakra-ui/react"
+import Time from '../components/Time'
 
 import PasswordInput from '../components/Password'
 
@@ -38,36 +39,8 @@ export default function Test() {
 			    <link rel="manifest" href="/site.webmanifest" />
 			  </Head>
 
+		<Time />
 
- <ChakraProvider>
-  <div className={styles.canvas_form}>
-    <div className={styles.container_form}>
-      <div className={styles.center}>
-        <Container maxW="xl" centerContent>
-
-
-
-          <Heading as="h2" size="xl">
-            Early Access.
-          </Heading>
-          <br />
-
-         <PasswordInput />
-
-          <br />
-          <br />
-          <Text fontSize="sm">
-            <i>
-              power in <strong>truth</strong>
-            </i>
-            ®
-          </Text>
-        </Container>
-
-      </div>
-    </div>
-  </div>
- </ChakraProvider>
 </div>
 
   )

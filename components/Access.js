@@ -55,20 +55,23 @@ render={({
             {({ input, meta }) => (
             <InputGroup size="sm">
               <Input {...input}
-							    variant="flushed"
+							    variant="outline"
 									focusBorderColor="lime"
+									borderRadius="lg"
+									borderColor="gray"
                   pr=".5rem"
                   type="password"
                   placeholder=" Enter password"
                   isRequired
               />
-        <InputRightElement width="4.5rem" pr=".2rem">
+						<InputRightElement width="4.5rem" pr=".2rem">
              <Button
+							 bg="gray.700"
+							 color="white"
                h="1.57rem"
                w="4.2rem"
                size="sm"
 							 type="submit"
-							 variant="pink"
 							 disabled={submitting}
                onClick={handleSubmit}>
 

@@ -13,6 +13,7 @@ import { TiSocialVimeo } from "react-icons/ti"
 import { DiGithubBadge } from "react-icons/di"
 import { ChakraProvider } from "@chakra-ui/react"
 import Socialfooter from '../components/Socialfooter'
+import Time from '../components/Time'
 import {
 	InputGroup,
 	Code,
@@ -56,22 +57,11 @@ export default function Locked() {
   </Head>
 
   <ChakraProvider>
-	<div className={styles.cover}>
-		<Image
-			src="https://cdn.hldtru.space/next.images/tiffany.png"
-			alt="cover image"
-			layout="fill"
-			objectFit="cover"
-			quality="100"
-			placeholder="blur"
-			blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
-		/>
-	</div>
+   <Time />
 
 
 
     <Center
-			bg="teal.200"
       maxH="100vh"
       h="100vh"
       m="auto"

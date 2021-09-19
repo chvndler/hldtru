@@ -40,7 +40,7 @@ export default function Home() {
 
   <div className={styles.cover}>
     <Image
-      src="https://cdn.hldtru.space/next.images/hqsnow.jpg"
+      src="https://cdn.hldtru.space/next.images/tiffany_main.jpg"
       alt="cover image"
       layout="fill"
       objectFit="cover"
@@ -109,7 +109,7 @@ export default function Home() {
       <a>HXOUSE</a>
     </Link>
 
-    <Link href="/archive">
+    <Link href="/front">
       <a>Archive®</a>
     </Link>
 
@@ -117,19 +117,19 @@ export default function Home() {
 
     <Link href="/early">
       <a>
-        <h5>Early Access</h5>
+        <h5>Early Access.</h5>
       </a>
     </Link>
 
     <Link href="/about">
       <a>
-        <h5>Information</h5>
+        <h5>Information.</h5>
       </a>
     </Link>
 
     <Link href="/subscribe">
       <a>
-        <h5>Subscribe</h5>
+        <h5>Subscribe.</h5>
       </a>
     </Link>
 

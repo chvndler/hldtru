@@ -91,43 +91,17 @@ export default function Subscribe() {
     <Center
       maxH="100vh"
       h="100vh"
-      m="auto"
-      pl="14px"
-      pr="14px"
+      m="0"
+      pl="0px"
+      pr="0px"
       pb="60px"
       w="100%"
     >
       <VStack w="100%">
         <Heading>Subscribe.</Heading>
-
+<div className="klaviyo-form-WfEhm2"></div>
         <Skeleton height="20px" isLoaded />
-				<form>
-        <FormControl id="email_signup" action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" width="350px" isRequired="true" size="small">
-          <InputGroup size="sm">
-            <Input
-              type="hidden"
-							name="g"
-							value="SchTjq"
-            />
-						<Input
-							id="k_id_email"
-							type="email"
-							value=""
-							size="sm"
-							placeholder="Email address"
-							focusBorderColor="lime"
-							borderRadius="lg"
-							pr="1rem"
-						/>
-            <InputRightElement pr="0.2rem" width="4.5rem">
-              <Button type="submit" variant="hldtru" h="1.58rem" size="sm">
-                Submit
-              </Button>
-            </InputRightElement>
-          </InputGroup>
-        </FormControl>
-</form>
-        <Skeleton height="40px" isLoaded />
+
         <Text fontSize="xs">
           <i>
             we respect your <strong>privacy</strong>
