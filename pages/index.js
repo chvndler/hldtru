@@ -21,11 +21,11 @@ export default function Home() {
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <meta property="og:title" content="hldtru® Web App" />
+    <meta property="og:title" content="hldtru®" />
     <meta property="og:url" content="https://www.hldtru.co/" />
     <meta
       property="og:image"
-      content="https://s3.us-east-2.amazonaws.com/truth.drop/assets/social.jpg"
+      content="https://www.hldtru.cloud/assets/social.jpg"
     />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -40,7 +40,7 @@ export default function Home() {
 
   <div className={styles.cover}>
     <Image
-      src="https://s3.amazonaws.com/truth.cloud/tiffany_main.jpg"
+      src="https://www.hldtru.cloud/assets/tiffany.jpg"
       alt="cover"
       layout="fill"
       objectFit="cover"
