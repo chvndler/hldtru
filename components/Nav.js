@@ -26,7 +26,7 @@ export default function Nav() {
       >
         Back
       </Button>
-			<Link href="https://hldtr.us" target="_blank" rel="norefferer">
+			<Link href="https://hldtru.us/collections/all" target="_blank" rel="norefferer">
       <Button
         size="sm"
         h="22px"
@@ -37,7 +37,7 @@ export default function Nav() {
         variant="outline"
         borderRadius="md"
       >
-        Shop
+        Webstore
       </Button>
 		</Link>
 		<Link href="/front">
