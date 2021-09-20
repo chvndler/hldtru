@@ -34,7 +34,7 @@ export default function Home() {
     <link rel="manifest" href="/site.webmanifest" />
     <link
       rel="stylesheet"
-      href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css"
+      href="http://www.hldtru.cloud/stylesheets/font.css"
     />
   </Head>
 
