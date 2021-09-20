@@ -137,11 +137,19 @@
   line-height: 1.25 !important;
 }
 
+.side_links {
+	color: #fff;
+}
+
+.side_links a:hover {
+	color: rgba(50, 50, 50, 0.5) !important;
+}
+
 /* All @media Rules */
 
 /* SMALL DEVICES - ( MAX 500px ) */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .sidenav a {
     font-size: 1.4rem !important;
   }
@@ -150,6 +158,12 @@
     font-size: 0.8rem !important;
     line-height: 1.2 !important;
   }
+
+	.footer {
+		font-weight: bold;
+	  font-size: 0.66rem !important;
+	  padding-bottom: 12px;
+	}
 
   .sidenav {
 		top: 130px !important;

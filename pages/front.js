@@ -60,15 +60,15 @@ const theme = extendTheme({ breakpoints })
 
   <ChakraProvider>
     <Time />
-    <Container h="65vh" maxW="60%">
-      <Center h="10%">
+    <Container h="50vh" maxW="60%">
+      <Center h="30%">
         <Heading fontSize="2xl">HOLDTRUE®</Heading>
         <Text fontSize="2xl">
           <i>A</i>rchive.
         </Text>
       </Center>
     </Container>
-    <Text fontSize="xl" align="center" mb="20px">
+    <Text fontSize="xl" align="center" mb="10px">
       Archive is currently being updated.
       <br />
       Please check back soon.

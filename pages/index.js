@@ -40,11 +40,11 @@ export default function Home() {
 
   <div className={styles.cover}>
     <Image
-      src="https://cdn.hldtru.space/next.images/tiffany_main.jpg"
-      alt="cover image"
+      src="https://s3.amazonaws.com/truth.cloud/tiffany_main.jpg"
+      alt="cover"
       layout="fill"
       objectFit="cover"
-      quality="100"
+      quality={100}
 			placeholder="blur"
 			blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
     />
@@ -143,7 +143,7 @@ export default function Home() {
         pl={0}
         pt={6}
       >
-        <Stack direction="row">
+        <Stack className={styles.side_links} direction="row">
           <Link
             href="https://instagram.com/hldtru"
             target="_blank"
