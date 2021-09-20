@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import { useState } from 'react'
 import { Form, Field } from 'react-final-form'
 import { FORM_ERROR } from 'final-form'
+import { BiRightArrowAlt } from "react-icons/bi";
 import styles from '../components/Essentials.module.css'
 import { ChakraProvider,
   Button,
@@ -17,7 +18,6 @@ import { ChakraProvider,
 
 
 function Access() {
-
     const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
     const onSubmit = async values => {
           await sleep(300)
@@ -58,18 +58,19 @@ render={({
 							    variant="outline"
 									focusBorderColor="lime"
 									borderRadius="lg"
-									borderColor="gray"
+									borderColor="gray.300"
                   pr=".5rem"
                   type="password"
                   placeholder=" Enter password"
                   isRequired
               />
-						<InputRightElement width="4.5rem" pr=".2rem">
+						<InputRightElement width="5.7rem" pl=".2rem" pr="0.22rem">
              <Button
-							 bg="gray.700"
+							 rightIcon={<BiRightArrowAlt />}
+							 bg="gray.900"
 							 color="white"
-               h="1.57rem"
-               w="4.2rem"
+               h="1.5rem"
+							 pr=".5rem"
                size="sm"
 							 type="submit"
 							 disabled={submitting}

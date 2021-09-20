@@ -35,7 +35,7 @@ import {
 import Access from '../components/Access'
 
 
-export default function Locked() {
+export default function Early() {
 	return (
 <div className={styles.canvas_fluid}>
   <Head>
@@ -58,9 +58,6 @@ export default function Locked() {
 
   <ChakraProvider>
    <Time />
-
-
-
     <Center
       maxH="100vh"
       h="100vh"
@@ -75,7 +72,7 @@ export default function Locked() {
 				Early Access.
 				</Heading>
 
-       <Skeleton height="40px" isLoaded />
+       <Skeleton height="20px" isLoaded />
 
         <Access />
 
