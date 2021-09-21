@@ -34,13 +34,13 @@ export default function Home() {
     <link rel="manifest" href="/site.webmanifest" />
     <link
       rel="stylesheet"
-      href="http://www.hldtru.cloud/stylesheets/font.css"
+      href="https://hldtru.io/stylesheets/font.css"
     />
   </Head>
 
   <div className={styles.cover}>
     <Image
-      src="http://www.hldtru.cloud/assets/tiffany.jpg"
+      src="https://hldtru.io/assets/tiffany.jpg"
       alt="cover"
       layout="fill"
       objectFit="cover"
