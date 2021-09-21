@@ -78,7 +78,7 @@ export default function Subscribe() {
     <link rel="manifest" href="/site.webmanifest" />
     <link
       rel="stylesheet"
-      href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css"
+      href="https://hldtru.io/stylesheets/font.css"
     />
     <script
       type="text/javascript"

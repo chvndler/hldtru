@@ -22,10 +22,10 @@ function Access() {
     const onSubmit = async values => {
           await sleep(300)
 
-          if (values.password !== 'early') {
+          if (values.password !== 'earlytruth') {
               return { [FORM_ERROR]: 'Password is incorrect.' }
           }
-    window.open("https://www.hldtru.us", "_blank");
+    window.open("https://www.hldtru.us/collections/early", "_blank");
   }
 
  return (

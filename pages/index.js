@@ -25,7 +25,7 @@ export default function Home() {
     <meta property="og:url" content="https://www.hldtru.co/" />
     <meta
       property="og:image"
-      content="http://www.hldtru.cloud/assets/social.jpg"
+      content="https://hldtru.io/assets/social.jpg"
     />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

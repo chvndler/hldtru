@@ -52,7 +52,7 @@ export default function Early() {
     <link rel="manifest" href="/site.webmanifest" />
     <link
       rel="stylesheet"
-      href="https://s3.us-east-2.amazonaws.com/truth.drop/fonts/font.css"
+      href="https://hldtru.io/stylesheets/font.css"
     />
   </Head>
 

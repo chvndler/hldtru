@@ -10,17 +10,21 @@ export default function Archive() {
     <div className={styles.container}>
       <Head>
         <title>hldtru®</title>
-				<meta name="description" content="Web Application for hldtru®" />
+				<meta name="description" content="Web application for hldtru®" />
 				<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="icon" href="/favicon.ico" />
 				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <link
+          rel="stylesheet"
+          href="https://hldtru.io/stylesheets/font.css"
+        />
       </Head>
 
 			<Image
-			  src="https://cdn.hldtru.space/next.images/mountain.jpg"
+			  src="https://hldtru.io/assets/tiffany.jpg"
 			  alt="cover image"
 				layout="fill"
 				objectFit="cover"
