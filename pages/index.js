@@ -21,11 +21,13 @@ export default function Home() {
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <meta property="og:title" content="hldtru®" />
-    <meta property="og:url" content="https://www.hldtru.co/" />
-    <meta
-      property="og:image"
-      content="https://hldtru.io/assets/social.jpg"
-    />
+    <meta property="og:url" content="https://www.hldtru.com/" />
+		<meta property="og:image" content="https://hldtru.io/assets/social.jpg" />
+    <meta property="og:image:secure_url" content="https://hldtru.io/assets/social.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="Logo and site address" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
