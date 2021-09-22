@@ -48,6 +48,8 @@
     "react-three-fiber": "^6.0.13",
     "reactstrap": "^8.10.0",
     "sharp": "^0.29.1",
+    "styled-components": "^5.3.1",
+    "theme-ui": "^0.11.2",
     "three": "^0.132.2",
     "universal-cookie": "^4.0.4"
   },

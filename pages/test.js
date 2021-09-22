@@ -1,24 +1,13 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../components/Essentials.module.css'
-import { ChakraProvider } from "@chakra-ui/react"
+import { ThemeProvider } from 'theme-ui'
 import {
-	InputGroup,
-	Code,
-	Heading,
-	Text,
-	Input,
-	InputRightElement,
-	Button,
-	Container,
-	Stack,
-	Center,
-	Square,
-	Circle,
-} from "@chakra-ui/react"
-import Time from '../components/Time'
+	Grid,
+	Box,
+} from 'theme-ui'
 
-import PasswordInput from '../components/Password'
+import Time from '../components/Time'
 
 
 export default function Test() {
@@ -41,6 +30,14 @@ export default function Test() {
 
 		<Time />
 
+<ThemeProvider>
+		<Grid mt="100px" gap={2} columns={[2, '1fr 2fr']}>
+     <Box bg="primary">Box</Box>
+     <Box bg="muted">Box</Box>
+     <Box bg="primary">Box</Box>
+     <Box bg="muted">Box</Box>
+    </Grid>
+</ThemeProvider>
 </div>
 
   )
