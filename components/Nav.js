@@ -26,7 +26,7 @@ export default function Nav() {
       >
         Back
       </Button>
-			<Link href="https://hldtru.us/collections/all" target="_blank" rel="norefferer">
+			<Link href="https://shop.hldtru.com/collections/all" target="_blank" rel="norefferer">
       <Button
         size="sm"
         h="22px"
@@ -58,7 +58,7 @@ export default function Nav() {
     <Spacer />
 
     <Box p="2" h="45px" w="100px" align="right" bg="transparent">
-			<Link href="https://hldtru.us/cart" target="_blank" rel="norefferer">
+			<Link href="https://shop.hldtru.com/cart" target="_blank" rel="norefferer">
       <Button
         size="sm"
         h="22px"

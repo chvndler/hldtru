@@ -51,7 +51,7 @@ export default function Locked() {
     <link rel="manifest" href="/site.webmanifest" />
     <link
       rel="stylesheet"
-      href="https://hldtru.io/stylesheets/font.css"
+      href="https://cdn.hldtru.io/stylesheets/font.css"
     />
   </Head>
 

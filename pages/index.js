@@ -22,8 +22,8 @@ export default function Home() {
     />
     <meta property="og:title" content="hldtru®" />
     <meta property="og:url" content="https://www.hldtru.com/" />
-		<meta property="og:image" content="https://hldtru.io/assets/social.jpg" />
-    <meta property="og:image:secure_url" content="https://hldtru.io/assets/social.jpg" />
+		<meta property="og:image" content="https://cdn.hldtru.space/assets/social.jpg" />
+    <meta property="og:image:secure_url" content="https://cdn.hldtru.io/assets/social.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="900" />
@@ -35,13 +35,13 @@ export default function Home() {
     <link rel="manifest" href="/site.webmanifest" />
     <link
       rel="stylesheet"
-      href="https://hldtru.io/stylesheets/font.css"
+      href="https://cdn.hldtru.io/stylesheets/font.css"
     />
   </Head>
 
   <div className={styles.cover}>
     <Image
-      src="https://hldtru.io/assets/tiffany.jpg"
+      src="https://cdn.hldtru.space/assets/tiffany_medium.jpg"
       alt="cover"
       layout="fill"
       objectFit="cover"

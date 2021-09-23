@@ -19,12 +19,12 @@ export default function Archive() {
         <link rel="manifest" href="/site.webmanifest" />
         <link
           rel="stylesheet"
-          href="https://hldtru.io/stylesheets/font.css"
+          href="https://cdn.hldtru.io/stylesheets/font.css"
         />
       </Head>
 
 			<Image
-			  src="https://hldtru.io/assets/tiffany.jpg"
+			  src="https://cdn.hldtru.space/assets/tiffany.jpg"
 			  alt="cover image"
 				layout="fill"
 				objectFit="cover"
@@ -41,10 +41,10 @@ export default function Archive() {
 			</div>
 
       <div className={styles.sidenav}>
-        <a href="https://hldtru.us/collections/new" target="_blank" rel="noreferrer">Days of truth</a>
-        <a href="https://hldtru.us/collections/shorts" target="_blank" rel="noreferrer">Copenhagen© Racing</a>
-        <a href="https://hldtru.us/collections/tees" target="_blank" rel="noreferrer">V2 Training</a>
-        <a href="https://hldtru.us/collections/all" target="_blank" rel="noreferrer">Preseason</a>
+        <a href="https://shop.hldtru.com/collections/new" target="_blank" rel="noreferrer">Days of truth</a>
+        <a href="https://shop.hldtru.com/collections/shorts" target="_blank" rel="noreferrer">Copenhagen© Racing</a>
+        <a href="https://shop.hldtru.com/collections/tees" target="_blank" rel="noreferrer">V2 Training</a>
+        <a href="https://shop.hldtru.com/collections/all" target="_blank" rel="noreferrer">Preseason</a>
 				<Link href="/hxouse">
 				<a>Powered by</a>
 				</Link>
