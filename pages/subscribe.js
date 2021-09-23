@@ -108,7 +108,7 @@ export default function Subscribe() {
           </i>
           ®
         </Text>
-        <Text fontSize="0.5rem">
+        <Text pt="10px" fontSize="0.6rem">
           <Link color="gray" className={styles.small_link} href="/privacy">
             <a>Privacy Policy</a>
           </Link>

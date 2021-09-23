@@ -22,10 +22,10 @@ function Access() {
     const onSubmit = async values => {
           await sleep(300)
 
-          if (values.password !== 'earlytruth') {
-              return { [FORM_ERROR]: 'Password is incorrect.' }
+          if (values.password !== 'EARLYTRUTH') {
+              return { [FORM_ERROR]: 'Password is incorrect. Try again.' }
           }
-    window.open("https://www.hldtru.us/collections/early", "_blank");
+    window.open("https://shop.hldtru.com/collections/early", "_blank");
   }
 
  return (
@@ -85,7 +85,7 @@ render={({
     <span className={styles.alert}>
 
   <Badge
-    m="auto"
+    mt="30px"
     zIndex="1000"
     >{meta.error}</Badge></span>}
 
@@ -96,8 +96,8 @@ render={({
 
           <Badge
               variant="outline"
-              colorScheme="gray"
-              m="auto"
+              colorScheme="blue"
+              mt="30px"
               zIndex="1002"
               pl="10px"
               pr="10px">

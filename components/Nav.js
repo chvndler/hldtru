@@ -22,7 +22,7 @@ export default function Nav() {
         mr="1"
         border="1px"
         variant="outline"
-        borderRadius="md"
+        borderRadius="xl"
       >
         Back
       </Button>
@@ -33,7 +33,7 @@ export default function Nav() {
         pl="3"
         pr="3"
         mr="1"
-        border="1px"
+        border="0px"
         variant="outline"
         borderRadius="md"
       >
@@ -47,7 +47,7 @@ export default function Nav() {
         pl="3"
         pr="3"
         mr="1"
-        border="1px"
+        border="0px"
         variant="outline"
         borderRadius="md"
       >
@@ -65,7 +65,7 @@ export default function Nav() {
         pl="3"
         pr="3"
         mr="1"
-        border="1px"
+        border="0px"
         variant="outline"
         borderRadius="md"
       >

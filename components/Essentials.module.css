@@ -133,6 +133,10 @@
   font-size: 2rem !important;
 }
 
+.small_link {
+  text-decoration: underline;
+}
+
 .small_link a:hover {
 	color: rgba(50, 50, 50, 0.5) !important;
 }
@@ -208,13 +212,13 @@
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.75rem !important;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   text-transform: none;
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
   background-color: transparent;
   text-align: center;
 	z-index: 32;

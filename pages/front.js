@@ -122,7 +122,7 @@ const theme = extendTheme({ breakpoints })
           >
             <Link href="/">
               <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
-                <a>COPENHAGEN® RACING</a>
+                <a>COPENHAGEN® RACING SERIES</a>
               </Text>
             </Link>
           </Box>
@@ -140,7 +140,7 @@ const theme = extendTheme({ breakpoints })
           >
             <Link href="/">
               <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
-                <a>V2 TRAINING</a>
+                <a>V2: "ALONE W/ THE GODS"</a>
               </Text>
             </Link>
           </Box>
@@ -158,7 +158,7 @@ const theme = extendTheme({ breakpoints })
           >
             <Link href="/">
               <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
-                <a>POWERED BY TRUTH</a>
+                <a>TRUTH BE TOLD</a>
               </Text>
             </Link>
           </Box>
@@ -176,7 +176,7 @@ const theme = extendTheme({ breakpoints })
           >
             <Link href="/">
               <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
-                <a>PRESEASON</a>
+                <a>POWERED BY TRUTH</a>
               </Text>
             </Link>
           </Box>
@@ -213,7 +213,7 @@ const theme = extendTheme({ breakpoints })
           >
             <Link href="/">
               <Text fontSize="xs" m="0" p="0" fontWeight="bold">
-                <a>COLLECTION NAME</a>
+                <a>PRESEASON</a>
               </Text>
             </Link>
           </Box>

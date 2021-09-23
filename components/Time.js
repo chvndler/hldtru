@@ -11,7 +11,7 @@ function Time() {
 <ChakraProvider>
   <Box mt="10px" position="fixed" top="0" right="0" left="0" zIndex="800">
     <Center>
-      <Text fontSize="md">
+      <Text fontSize="lg">
         <Moment format="hh:mm:ss" interval={1000}></Moment>
       </Text>
     </Center>
