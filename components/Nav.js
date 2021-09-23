@@ -12,7 +12,7 @@ export default function Nav() {
  <ChakraProvider>
 	 <Box w="100vw" position="fixed" top="0" right="0" bg="white" left="0">
   <Flex>
-    <Box p="2" h="45px" width="250px" bg="transparent">
+    <Box p="2" h="45px" width="300px" bg="transparent">
       <Button
 				onClick={() => router.back()}
         size="sm"
