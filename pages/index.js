@@ -42,16 +42,6 @@ export default function Home() {
   <div className={styles.cover}>
 
     <Image
-      src="https://cdn.hldtru.space/assets/tiffany_medium.jpg"
-      alt="cover"
-      layout="fill"
-      objectFit="cover"
-      quality={100}
-			placeholder="blur"
-			blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
-    />
-
-    <Image
       src="/tiffany_hd.jpg"
       alt="cover"
       layout="fill"
