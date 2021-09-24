@@ -25,7 +25,7 @@ function Access() {
           if (values.password !== 'EARLYTRUTH') {
               return { [FORM_ERROR]: 'Password is incorrect. Try again.' }
           }
-    window.open("https://shop.hldtru.com/collections/early", "_blank");
+    window.open("https://shop.hldtru.com/collections/early-truth", "_blank");
   }
 
  return (
