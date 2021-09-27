@@ -22,7 +22,7 @@ function Access() {
     const onSubmit = async values => {
           await sleep(300)
 
-          if (values.password !== 'EARLYTRUTH') {
+          if (values.password !== 'TIFFANY') {
               return { [FORM_ERROR]: 'Password is incorrect. Try again.' }
           }
     window.open("https://shop.hldtru.com/collections/early-truth", "_blank");
