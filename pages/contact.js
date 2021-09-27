@@ -60,7 +60,7 @@ export default function Contact() {
 
     <Text fontSize="sm">
     <Link href="mailto:wholesale@hldtru.com" target="_blank" rel="noreferrer" passHref>
-      wholesale@hldtru.com
+      <a>wholesale@hldtru.com</a>
     </Link>
     </Text>
 
@@ -71,7 +71,7 @@ export default function Contact() {
     </Text>
     <Text fontSize="sm">
     <Link href="mailto:media@hldtru.com" target="_blank" rel="noreferrer" passHref>
-      media@hldtru.com
+      <a>media@hldtru.com</a>
     </Link>
     </Text>
 
@@ -82,7 +82,7 @@ export default function Contact() {
     </Text>
     <Text fontSize="sm">
     <Link href="mailto:shop@hldtru.com" target="_blank" rel="noreferrer" passHref>
-      shop@hldtru.com
+      <a>shop@hldtru.com</a>
     </Link>
     </Text>
 
@@ -90,19 +90,22 @@ export default function Contact() {
 
       <Text fontSize="sm">
         <strong>instagram: </strong>
-        <Link href="https://instagram.com/hldtru" target="_blank" rel="noreferrer" passHref>@hldtru
+        <Link href="https://instagram.com/hldtru" target="_blank" rel="noreferrer" passHref>
+        <a>@hldtru</a>
         </Link>
       </Text>
 
       <Text fontSize="sm">
         <strong>twitter: </strong>
-        <Link href="https://twitter.com/hldtru" target="_blank" rel="noreferrer" passHref>@hldtru
+        <Link href="https://twitter.com/hldtru" target="_blank" rel="noreferrer" passHref>
+        <a>@hldtru</a>
         </Link>
       </Text>
 
       <Text fontSize="sm">
         <strong>facebook: </strong>
-        <Link href="https://facebook.com/hldtru" target="_blank" rel="noreferrer" passHref>@hldtru
+        <Link href="https://facebook.com/hldtru" target="_blank" rel="noreferrer" passHref>
+        <a>@hldtru</a>
         </Link>
       </Text>
 
