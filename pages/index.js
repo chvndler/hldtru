@@ -42,7 +42,7 @@ export default function Home() {
   <div className={styles.cover}>
 
     <Image
-      src="/tiffany_hd.jpg"
+      src="/tiffany_flat.jpg"
       alt="cover"
       layout="fill"
       objectFit="cover"
