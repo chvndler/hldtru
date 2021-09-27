@@ -82,29 +82,21 @@ export default function Home() {
   <div className={styles.sidenav}>
     <a
       href="https://shop.hldtru.com/collections/new"
-      target="_blank"
-      rel="noreferrer"
     >
       New
     </a>
     <a
       href="https://shop.hldtru.com/collections/shorts"
-      target="_blank"
-      rel="noreferrer"
     >
       Shorts
     </a>
     <a
       href="https://shop.hldtru.com/collections/tees"
-      target="_blank"
-      rel="noreferrer"
     >
       Tees
     </a>
     <a
       href="https://shop.hldtru.com/collections/all"
-      target="_blank"
-      rel="noreferrer"
     >
       Shop All
     </a>
