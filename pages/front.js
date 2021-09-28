@@ -56,10 +56,7 @@ const theme = extendTheme({ breakpoints })
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.hldtru.io/stylesheets/font.css"
-    />
+    <link rel="stylesheet" href="https://cdn.hldtru.io/stylesheets/font.css" />
   </Head>
 
   <ChakraProvider>
@@ -102,7 +99,7 @@ const theme = extendTheme({ breakpoints })
             bg="transparent"
             color="black"
           >
-            <Link href="/">
+            <Link href="/" passHref>
               <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
                 <a>DAYS OF TRUTH©</a>
               </Text>
@@ -120,7 +117,7 @@ const theme = extendTheme({ breakpoints })
             bg="transparent"
             color="black"
           >
-            <Link href="/">
+            <Link href="/" passHref>
               <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
                 <a>COPENHAGEN® RACING SERIES</a>
               </Text>
@@ -138,7 +135,7 @@ const theme = extendTheme({ breakpoints })
             bg="transparent"
             color="black"
           >
-            <Link href="/">
+            <Link href="/" passHref>
               <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
                 <a>V2: "ALONE W/ THE GODS"</a>
               </Text>
@@ -156,7 +153,7 @@ const theme = extendTheme({ breakpoints })
             bg="transparent"
             color="black"
           >
-            <Link href="/">
+            <Link href="/" passHref>
               <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
                 <a>TRUTH BE TOLD</a>
               </Text>
@@ -174,7 +171,7 @@ const theme = extendTheme({ breakpoints })
             bg="transparent"
             color="black"
           >
-            <Link href="/">
+            <Link href="/" passHref>
               <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
                 <a>POWERED BY TRUTH</a>
               </Text>
@@ -192,7 +189,7 @@ const theme = extendTheme({ breakpoints })
             bg="transparent"
             color="black"
           >
-            <Link href="/">
+            <Link href="/" passHref>
               <Text fontSize="xs" m="auto" p="0" fontWeight="bold">
                 <a>TRUTH BE TOLD</a>
               </Text>
@@ -211,7 +208,7 @@ const theme = extendTheme({ breakpoints })
             bg="transparent"
             color="black"
           >
-            <Link href="/">
+            <Link href="/" passHref>
               <Text fontSize="xs" m="0" p="0" fontWeight="bold">
                 <a>PRESEASON</a>
               </Text>
@@ -225,7 +222,5 @@ const theme = extendTheme({ breakpoints })
   </ChakraProvider>
 </div>
 
-
-
-  )
+ )
 }

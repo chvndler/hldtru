@@ -11,7 +11,7 @@ import Black from '/public/black.jpg'
 export default function Home() {
   return (
 
- <div className={styles.container}>
+<div className={styles.container}>
   <Head>
     <title>hldtru®</title>
     <meta name="description" content="Web Application for hldtru®" />
@@ -21,8 +21,14 @@ export default function Home() {
     />
     <meta property="og:title" content="hldtru®" />
     <meta property="og:url" content="https://www.hldtru.com/" />
-		<meta property="og:image" content="https://cdn.hldtru.space/assets/social.jpg" />
-    <meta property="og:image:secure_url" content="https://cdn.hldtru.io/assets/social.jpg" />
+    <meta
+      property="og:image"
+      content="https://cdn.hldtru.space/assets/social.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://cdn.hldtru.io/assets/social.jpg"
+    />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="900" />
@@ -32,14 +38,10 @@ export default function Home() {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.hldtru.io/stylesheets/font.css"
-    />
+    <link rel="stylesheet" href="https://cdn.hldtru.io/stylesheets/font.css" />
   </Head>
 
   <div className={styles.cover}>
-
     <Image
       src={Black}
       alt="cover"
@@ -49,7 +51,6 @@ export default function Home() {
       placeholder="blur"
       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
     />
-
   </div>
 
   <div className={styles.header}>
@@ -79,26 +80,10 @@ export default function Home() {
   </div>
 
   <div className={styles.sidenav}>
-    <a
-      href="https://shop.hldtru.com/collections/new"
-    >
-      New
-    </a>
-    <a
-      href="https://shop.hldtru.com/collections/shorts"
-    >
-      Shorts
-    </a>
-    <a
-      href="https://shop.hldtru.com/collections/tees"
-    >
-      Tees
-    </a>
-    <a
-      href="https://shop.hldtru.com/collections/all"
-    >
-      Shop All
-    </a>
+    <a href="https://shop.hldtru.com/collections/new">New</a>
+    <a href="https://shop.hldtru.com/collections/shorts">Shorts</a>
+    <a href="https://shop.hldtru.com/collections/tees">Tees</a>
+    <a href="https://shop.hldtru.com/collections/all">Shop All</a>
     <Link href="/hxouse">
       <a>HXOUSE</a>
     </Link>
@@ -173,8 +158,7 @@ export default function Home() {
       <a>Privacy Policy</a>
     </Link>
   </footer>
- </div>
+</div>
 
-
-  )
+ )
 }
