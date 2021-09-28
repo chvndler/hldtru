@@ -11,7 +11,7 @@ export default function Cover() {
   return (
   <div className={styles.canvas}>
     <Head>
-     <title>Cover - hldtru®</title>
+     <title>Cover.</title>
 			 <meta name="description" content="Web Application for hldtru®" />
 			 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 			 <link rel="icon" href="/favicon.ico" />
@@ -19,17 +19,12 @@ export default function Cover() {
 			 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 			 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 			 <link rel="manifest" href="/site.webmanifest" />
-       <link
-         rel="stylesheet"
-         href="https://cdn.hldtru.io/stylesheets/font.css"
-       />
     </Head>
 
 
-    <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
+    <Canvas shadows dpr={[1, 2]} camera={{ fov: 90 }}>
       <Suspense fallback={null}>
-        <Stage controls={ref} preset="rembrandt" intensity={1}  contactShadow={false} environment="forest">
-        <axesHelper args={[1, 1, 1]} />
+        <Stage controls={ref} preset="rembrandt" intensity={2}  contactShadow={false} environment="forest">
           <Layout />
         </Stage>
       </Suspense>
@@ -38,8 +33,6 @@ export default function Cover() {
 
 
   </div>
-
-
 
   )
 }

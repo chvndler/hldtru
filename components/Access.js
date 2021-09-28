@@ -64,12 +64,12 @@ render={({
                   placeholder=" Enter password"
                   isRequired
               />
-						<InputRightElement width="5.7rem" pl=".2rem" pr="0.22rem">
+						<InputRightElement width="5.7rem" pl=".2rem" pr="0.2rem">
              <Button
 							 rightIcon={<BiRightArrowAlt />}
 							 bg="gray.900"
 							 color="white"
-               h="1.5rem"
+               h="1.6rem"
 							 pr=".5rem"
                size="sm"
 							 type="submit"

@@ -129,6 +129,5 @@ export default function Subscribe() {
   </ChakraProvider>
 </div>
 
-
-      )
-    }
+  )
+}

@@ -6,8 +6,7 @@ import { ChakraProvider, Container, Box, Stack, Skeleton } from "@chakra-ui/reac
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { TiSocialTwitter } from "react-icons/ti"
 import { TiSocialVimeo } from "react-icons/ti"
-import Mountain from '../public/mountain.jpg'
-
+import Black from '/public/black.jpg'
 
 export default function Home() {
   return (
@@ -42,7 +41,7 @@ export default function Home() {
   <div className={styles.cover}>
 
     <Image
-      src="/tiffany_hd.jpg"
+      src={Black}
       alt="cover"
       layout="fill"
       objectFit="cover"
@@ -64,15 +63,15 @@ export default function Home() {
           <rect width="300" height="275.08" fill="none" />
           <polygon
             points="67.25 22.62 111.73 61.96 13.32 194.6 143.97 175.56 212.02 243.54 268.23 22.62 67.25 22.62"
-            fill="#000"
+            fill="#0abab5"
           />
           <path
             d="M249.61,196.58a4.35,4.35,0,0,0,.76-2.63,4,4,0,0,0-1.35-3.22,5.65,5.65,0,0,0-3.79-1.16h-7v13.76h3.16v-5h2.7l3,5h3.62l-3.32-5.27A4,4,0,0,0,249.61,196.58Zm-3.11-1.1a2.83,2.83,0,0,1-1.86.54h-3.26v-4.08h3.26a2.83,2.83,0,0,1,1.86.54,1.81,1.81,0,0,1,.64,1.47A1.91,1.91,0,0,1,246.5,195.48Z"
-            fill="#000"
+            fill="#fff"
           />
           <path
             d="M250.57,185.81a13.27,13.27,0,0,0-12.78,0,12.47,12.47,0,0,0-4.64,4.48,12,12,0,0,0,0,12.32,12.45,12.45,0,0,0,4.64,4.47,13.2,13.2,0,0,0,12.78,0,12.45,12.45,0,0,0,4.64-4.47,12,12,0,0,0,0-12.32A12.47,12.47,0,0,0,250.57,185.81Zm2.78,15.76a10.75,10.75,0,0,1-18.34,0,9.88,9.88,0,0,1,0-10.24,10.45,10.45,0,0,1,3.87-3.74,10.87,10.87,0,0,1,10.6,0,10.45,10.45,0,0,1,3.87,3.74,9.88,9.88,0,0,1,0,10.24Z"
-            fill="#000"
+            fill="#fff"
           />
         </svg>
       </a>

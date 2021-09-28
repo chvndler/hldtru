@@ -28,7 +28,7 @@ export default function Contact() {
 <div className={styles.canvas_fluid}>
 
   <Head>
-    <title>About.</title>
+    <title>Contact.</title>
     <meta name="description" content="Web Application for hldtru®" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="icon" href="/favicon.ico" />
