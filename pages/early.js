@@ -35,8 +35,11 @@ import {
 import Access from '../components/Access'
 
 
+
+
 export default function Early() {
 	return (
+
 <div className={styles.canvas_fluid}>
   <Head>
     <title>Early Access.</title>

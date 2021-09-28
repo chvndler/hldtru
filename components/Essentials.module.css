@@ -121,7 +121,7 @@
 .h1 {
 	font-family: 'Scania Sans CY Headline', sans-serif;
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: normal !important;
 	font-style: normal;
 	text-align: center;
 }
