@@ -71,8 +71,10 @@ export default function Pack() {
 
       <Skeleton height="40px" isLoaded />
 
-      <Box as="button" href="https://shop.hldtru.com/collections/all" bg="#231f20" w="100%" p={1} borderRadius="10px" color="white">
-         <strong>SHOP NOW</strong>
+      <Box as="button" bg="#231f20" w="100%" p={1} borderRadius="10px" color="white" passHref>
+         <Link href="https://shop.hldtru.com/collections/all">
+         <a><strong>SHOP NOW</strong></a>
+         </Link>
       </Box>
 
       <Box bg="black" w="100%" h="200px" p={0} mt="10px" mb="10px" borderRadius="10px" color="white">
