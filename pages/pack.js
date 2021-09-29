@@ -90,6 +90,8 @@ export default function Pack() {
          />
       </Box>
 
+      <Skeleton height="60px" isLoaded />
+
 
 
 

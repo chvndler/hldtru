@@ -6,7 +6,7 @@ import { ChakraProvider, Container, Box, Stack, Skeleton } from "@chakra-ui/reac
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { TiSocialTwitter } from "react-icons/ti"
 import { TiSocialVimeo } from "react-icons/ti"
-import Black from '/public/black.jpg'
+import Tiffany from '/public/tiffany_hd.jpg'
 
 export default function Home() {
   return (
@@ -43,7 +43,7 @@ export default function Home() {
 
   <div className={styles.cover}>
     <Image
-      src={Black}
+      src={Tiffany}
       alt="cover"
       layout="fill"
       objectFit="cover"
