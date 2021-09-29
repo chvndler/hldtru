@@ -17,6 +17,7 @@ import {
 	Link,
 } from "@chakra-ui/react"
 import Grid from '@react-css/grid'
+import Nav from '../components/Nav'
 
 
 export default function Privacy() {
@@ -44,17 +45,7 @@ export default function Privacy() {
   <ChakraProvider>
 
 
-	<Flex>
-	  <Box p="2" h="45px" width="250px" bg="transparent">
-	    <Button size="sm" h="22px" pl="3" pr="3" mr="1" border="1px" variant="outline" borderRadius="md">Back</Button>
-			<Button size="sm" h="22px" pl="3" pr="3" mr="1" border="1px" variant="outline" borderRadius="md">Shop</Button>
-			<Button size="sm" h="22px" pl="3" pr="3" mr="1" border="1px" variant="outline" borderRadius="md">Archive</Button>
-	  </Box>
-	  <Spacer />
-	  <Box p="2" h="45px" w="100px" align="right" bg="transparent">
-	    <Button size="sm" h="22px" pl="3" pr="3" mr="1" border="1px" variant="outline" borderRadius="md">Cart</Button>
-	  </Box>
-	</Flex>
+<Nav />
 
 
 
