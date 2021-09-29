@@ -6,7 +6,6 @@ import Container from 'rsuite/Container'
 import { Nav, NavItem, Content, Grid, Row, Col } from 'rsuite'
 import 'rsuite/styles/index.less';
 
-import Time from '../components/Time'
 
 
 export default function Test() {
@@ -14,7 +13,7 @@ export default function Test() {
 
 <div className={styles.canvas_fluid}>
   <Head>
-    <title>hldtru®</title>
+    <title>Test Archive</title>
     <meta name="description" content="Web Application for hldtru®" />
     <meta
       name="viewport"
@@ -27,8 +26,7 @@ export default function Test() {
     <link rel="manifest" href="/site.webmanifest" />
   </Head>
 
-
-	<Nav>
+  <Nav>
     <Nav.Item>Home</Nav.Item>
     <Nav.Item>Collections</Nav.Item>
     <Nav.Item>Webstore</Nav.Item>
@@ -42,51 +40,51 @@ export default function Test() {
         <Row gutter={10} className={styles.row}>
           <Col xs={24} sm={12} md={8}>
             <div className={styles.col_xl}>
-						<Image
-						 src="https://cdn.hldtru.space/assets/ShortsPacks17.jpg"
-						 borderRadius="12px"
-						 height="400px"
-						 width="100%"
-						 alt="pack"
-						 layout="fill"
-						 objectFit="cover"
-						 quality={100}
-						 placeholder="blur"
-						 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
-						 />
-						 </div>
+              <Image
+                src="https://cdn.hldtru.space/assets/ShortsPacks17.jpg"
+                borderRadius="12px"
+                height="400px"
+                width="100%"
+                alt="pack"
+                layout="fill"
+                objectFit="cover"
+                quality={100}
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
+              />
+            </div>
           </Col>
           <Col xs={24} sm={12} md={8}>
             <div className={styles.col_lg}>
-						<Image
-						 src="https://cdn.hldtru.space/assets/land.jpg"
-						 borderRadius="12px"
-						 height="400px"
-						 width="100%"
-						 alt="pack"
-						 layout="fill"
-						 objectFit="cover"
-						 quality={100}
-						 placeholder="blur"
-						 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
-						 />
-						 </div>
+              <Image
+                src="https://cdn.hldtru.space/assets/land.jpg"
+                borderRadius="12px"
+                height="400px"
+                width="100%"
+                alt="pack"
+                layout="fill"
+                objectFit="cover"
+                quality={100}
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
+              />
+            </div>
           </Col>
           <Col xs={24} sm={24} md={8}>
             <div className={styles.col_xl}>
-						<Image
-						 src="https://cdn.hldtru.space/assets/tiffany_hd.jpg"
-						 borderRadius="12px"
-						 height="400px"
-						 width="100%"
-						 alt="pack"
-						 layout="fill"
-						 objectFit="cover"
-						 quality={100}
-						 placeholder="blur"
-						 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
-						 />
-						 </div>
+              <Image
+                src="https://cdn.hldtru.space/assets/tiffany_hd.jpg"
+                borderRadius="12px"
+                height="400px"
+                width="100%"
+                alt="pack"
+                layout="fill"
+                objectFit="cover"
+                quality={100}
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
+              />
+            </div>
           </Col>
         </Row>
 
@@ -98,27 +96,25 @@ export default function Test() {
             <div className={styles.col_lg}></div>
           </Col>
           <Col xs={24} sm={12} md={8} lg={6}>
-          <div className={styles.col_lg}></div>
+            <div className={styles.col_lg}></div>
           </Col>
         </Row>
 
-				<Row gutter={10} className={styles.row}>
-					<Col xs={24} sm={12} md={8}>
-						<div className={styles.col_lg}></div>
-					</Col>
-					<Col xs={24} sm={12} md={8}>
-						<div className={styles.col_lg}></div>
-					</Col>
-					<Col xs={24} sm={24} md={8}>
-					<div className={styles.col_lg}></div>
-					</Col>
-				</Row>
+        <Row gutter={10} className={styles.row}>
+          <Col xs={24} sm={12} md={8}>
+            <div className={styles.col_lg}></div>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+            <div className={styles.col_lg}></div>
+          </Col>
+          <Col xs={24} sm={24} md={8}>
+            <div className={styles.col_lg}></div>
+          </Col>
+        </Row>
       </Grid>
     </Content>
   </Container>
 </div>
-
-
 
   )
 }
