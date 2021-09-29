@@ -43,7 +43,7 @@ export default function Pack() {
 
     <Nav />
 
-    <Container pt="100" maxW="container.md">
+    <Container pt="100" pb="100" maxW="container.md">
       <Heading as="h4" size="lg">
         Short Packs.
       </Heading>
