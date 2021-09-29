@@ -8,6 +8,8 @@ import { TiSocialTwitter } from "react-icons/ti"
 import { TiSocialVimeo } from "react-icons/ti"
 import Tiffany from '/public/tiffany_hd.jpg'
 
+
+
 export default function Home() {
   return (
 
