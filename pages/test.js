@@ -3,9 +3,10 @@ import Link from 'next/link'
 import { Image } from "@chakra-ui/react"
 import styles from '../components/Essentials.module.css'
 import Container from 'rsuite/Container'
-import { Nav, NavItem, Content, Grid, Row, Col } from 'rsuite'
+import { Content, Grid, Row, Col } from 'rsuite'
 import 'rsuite/styles/index.less';
 
+import Nav from '../components/Nav'
 
 
 export default function Test() {
@@ -26,24 +27,18 @@ export default function Test() {
     <link rel="manifest" href="/site.webmanifest" />
   </Head>
 
-  <Nav>
-    <Nav.Item>Home</Nav.Item>
-    <Nav.Item>Collections</Nav.Item>
-    <Nav.Item>Webstore</Nav.Item>
-    <Nav.Item>Products</Nav.Item>
-    <Nav.Item>About</Nav.Item>
-  </Nav>
+  <Nav />
 
   <Container className={styles.r_container}>
     <Content>
       <Grid fluid>
         <Row gutter={10} className={styles.row}>
-          <Col xs={24} sm={12} md={8}>
+          <Col xs={12} sm={12} md={8}>
             <div className={styles.col_xl}>
               <Image
                 src="https://cdn.hldtru.space/assets/ShortsPacks17.jpg"
                 borderRadius="12px"
-                height="400px"
+                height="350px"
                 width="100%"
                 alt="pack"
                 layout="fill"
@@ -54,12 +49,12 @@ export default function Test() {
               />
             </div>
           </Col>
-          <Col xs={24} sm={12} md={8}>
+          <Col xs={12} sm={12} md={8}>
             <div className={styles.col_lg}>
               <Image
                 src="https://cdn.hldtru.space/assets/land.jpg"
                 borderRadius="12px"
-                height="400px"
+                height="350px"
                 width="100%"
                 alt="pack"
                 layout="fill"
@@ -75,7 +70,7 @@ export default function Test() {
               <Image
                 src="https://cdn.hldtru.space/assets/tiffany_hd.jpg"
                 borderRadius="12px"
-                height="400px"
+                height="350px"
                 width="100%"
                 alt="pack"
                 layout="fill"
