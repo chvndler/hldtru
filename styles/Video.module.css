@@ -22,3 +22,31 @@
   font-size: 4rem;
   font-weight: 600;
 }
+
+.logo {
+	font-family: 'Scania Sans CY Headline', sans-serif !important;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.8em !important;
+	line-height: 1;
+}
+
+.link_left {
+	font-family: 'Scania Sans CY Headline', sans-serif !important;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em !important;
+	line-height: 1;
+}
+
+.link_right {
+	font-family: 'Scania Sans CY Headline', sans-serif !important;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em !important;
+	line-height: 1;
+}
+
+.time {
+	color: white;
+}

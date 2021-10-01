@@ -6,14 +6,12 @@ import styles from '../styles/Video.module.css'
 import {
 	Heading,
 	Box,
-	Stack,
+	Flex,
+	Spacer,
 	Text,
 	Skeleton,
-	Input,
-	InputRightElement,
 	Button,
 	Container,
-	VStack,
 	Center,
 	Square,
 	Circle,
@@ -52,27 +50,35 @@ export default function Video() {
     </Head>
 
 <video className={styles.video} playsInline autoPlay muted loop>
-  <source src="/flower.mp4" type="video/mp4" />
+  <source src="/horse.mp4" type="video/mp4" />
 </video>
 
 <ChakraProvider>
-  <Time />
-  <Center maxH="100vh" h="100vh" m="auto" pl="14px" pr="14px" pb="60px" w="100%" zIndex="2">
-    <VStack w="100%">
-      <Heading size="2xl">
-        enter
-      </Heading>
+  <Time className={styles.time}></Time>
 
+	<Box width="100vw" height="50vh" m="auto" pt="500px" zIndex="2">
 
+	<Flex color="white">
+	<Box w="300px" h="10" textAlign="center">
+	<div className={styles.link_left}>
+	Webstore
+	</div>
+	</Box>
+    <Spacer />
+		<Box w="300px" h="10" textAlign="center">
+		<div className={styles.logo}>
+		HOLDTRUE®
+		</div>
+		</Box>
+    <Spacer />
+		<Box w="300px" h="10" textAlign="center">
+		<div className={styles.link_right}>
+		Archive
+		</div>
+		</Box>
+  </Flex>
 
-
-      <Text fontSize="sm">
-        <i>
-                power in <strong>truth</strong>
-              </i> ®
-      </Text>
-    </VStack>
-  </Center>
+	</Box>
 
   <Socialfooter />
 
