@@ -1,0 +1,41 @@
+.footer__content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+  > * {
+    flex: 1;
+    margin: 0 3rem;
+  }
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+
+
+.footer__center {
+  text-align: center;
+}
+
+  .link {
+    margin: 0 1rem;
+  }
+
+
+.footer__right {
+  text-align: right;
+  opacity: 0.5;
+  transition: opacity 100ms ease-in;
+}
+  .vercel__title {
+    margin-left: 1rem;
+  }
+
+
+.footer__left {
+  text-align: left;
+  opacity: 0.5;
+  transition: opacity 100ms ease-in;
+}

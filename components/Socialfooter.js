@@ -12,7 +12,7 @@ import styles from '../components/Essentials.module.css'
 export default function Socialfooter() {
   return (
  <ChakraProvider>
-	 <Box pos="fixed" zIndex={30} bottom="0" bg="white" w="100%" p={4}>
+	 <Box pos="fixed" zIndex={30} bottom="0" bg="transparent" w="100%" p={4}>
 	 <Center>
 		 <Stack direction="row">
 			 <Link href="https://instagram.com/hldtru" target="_blank" rel="noreferrer" passHref>
