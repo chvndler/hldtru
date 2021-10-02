@@ -5,7 +5,7 @@ A web application for hldtru®.
 <hr>
 
 
-Discover more @ [hldtru.co/](https://hldtru.co)
+Discover more @ [hldtru.com/](https://www.hldtru.com)
 
 ###### Copyright © 2021. All rights reserved.
 
