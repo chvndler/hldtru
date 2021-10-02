@@ -12,7 +12,7 @@ export default function Cover() {
 <div className={styles.canvas}>
   <Head>
     <title>Cover.</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="description" content="East Coast based design label." />
     <meta
       name="viewport"

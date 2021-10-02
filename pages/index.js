@@ -16,7 +16,7 @@ export default function Home() {
 <div className={styles.container}>
   <Head>
     <title>hldtru®</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="description" content="Web Application for hldtru®" />
     <meta
       name="viewport"

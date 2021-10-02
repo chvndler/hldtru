@@ -10,7 +10,7 @@ export default function Archive() {
     <div className={styles.container}>
       <Head>
         <title>hldtru®</title>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
 				<meta name="description" content="Web application for hldtru®" />
 				<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="icon" href="/favicon.ico" />

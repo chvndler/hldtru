@@ -21,8 +21,8 @@ export default function Video() {
   return (
     <div className={styles.main}>
     <Head>
-      <meta charset="UTF-8">
       <title>Video.</title>
+      <meta charset="UTF-8" />
       <meta name="description" content="Web Application for hldtru®" />
       <meta
         name="viewport"
