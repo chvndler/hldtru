@@ -46,7 +46,7 @@ export default function Home() {
 
   <div className={styles.cover}>
     <Image
-      src={Tiffany}
+      src="https://cdn.hldtru.space/assets/black.jpg"
       alt="cover"
       layout="fill"
       objectFit="cover"
