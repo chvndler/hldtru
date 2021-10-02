@@ -37,6 +37,7 @@ export default function Locked() {
 <div className={styles.canvas_fluid}>
   <Head>
     <title>Early Access.</title>
+    <meta charset="UTF-8">
     <meta name="description" content="Web Application for hldtru®" />
     <meta
       name="viewport"

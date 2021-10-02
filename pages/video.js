@@ -21,7 +21,8 @@ export default function Video() {
   return (
     <div className={styles.main}>
     <Head>
-      <title>hldtru®</title>
+      <meta charset="UTF-8">
+      <title>Video.</title>
       <meta name="description" content="Web Application for hldtru®" />
       <meta
         name="viewport"
@@ -54,7 +55,7 @@ export default function Video() {
 </video>
 
 <ChakraProvider>
-  <Time className={styles.time}></Time>
+  <Time />
 
 	<Box width="100vw" height="50vh" m="auto" pt="500px" zIndex="2">
 

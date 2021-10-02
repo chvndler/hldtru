@@ -46,6 +46,7 @@ const theme = extendTheme({ breakpoints })
 <div className={styles.canvas_fluid}>
   <Head>
     <title>Archive.</title>
+    <meta charset="UTF-8">
     <meta name="description" content="Web Application for hldtru®" />
     <meta
       name="viewport"

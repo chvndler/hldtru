@@ -39,6 +39,7 @@ export default function Terms() {
 <div className={styles.canvas_fluid}>
   <Head>
     <title>Terms & Conditions.</title>
+    <meta charset="UTF-8">
     <meta name="description" content="Web Application for hldtru®" />
     <meta
       name="viewport"

@@ -26,6 +26,7 @@ export default function Privacy() {
 <div className={styles.canvas_fluid}>
   <Head>
     <title>Privacy Policy</title>
+    <meta charset="UTF-8">
     <meta name="description" content="Web Application for hldtru®" />
     <meta
       name="viewport"

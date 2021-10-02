@@ -29,6 +29,7 @@ export default function Pack() {
 
   <Head>
     <title>Short Packs.</title>
+    <meta charset="UTF-8">
     <meta name="description" content="Web Application for hldtru®" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="icon" href="/favicon.ico" />
