@@ -17,21 +17,12 @@ export default function Home() {
   <Head>
     <title>hldtru®</title>
     <meta charset="UTF-8" />
-    <meta name="description" content="Web Application for hldtru®" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="description" content="East Coast based design label." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta property="og:title" content="hldtru®" />
     <meta property="og:url" content="https://www.hldtru.com/" />
-    <meta
-      property="og:image"
-      content="https://cdn.hldtru.space/assets/social.jpg"
-    />
-    <meta
-      property="og:image:secure_url"
-      content="https://cdn.hldtru.io/assets/social.jpg"
-    />
+    <meta property="og:image" content="https://cdn.hldtru.space/assets/social.jpg" />
+    <meta property="og:image:secure_url" content="https://cdn.hldtru.io/assets/social.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="900" />

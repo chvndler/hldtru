@@ -1,7 +1,9 @@
 import Head from "next/head"
 import React, { Suspense, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
+import { useLoader } from "@react-three/fiber";
 import { OrbitControls, Stage, Environment } from '@react-three/drei'
+import Sidenav from '../components/Sidenav'
 import styles from '../styles/Model.module.css'
 import Model from '../components/Model'
 
@@ -14,20 +16,11 @@ export default function Cover() {
     <title>Cover.</title>
     <meta charset="UTF-8" />
     <meta name="description" content="East Coast based design label." />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta property="og:title" content="hldtru®" />
     <meta property="og:url" content="https://www.hldtru.com/" />
-    <meta
-      property="og:image"
-      content="https://cdn.hldtru.space/assets/social.jpg"
-    />
-    <meta
-      property="og:image:secure_url"
-      content="https://cdn.hldtru.io/assets/social.jpg"
-    />
+    <meta property="og:image" content="https://cdn.hldtru.space/assets/social.jpg" />
+    <meta property="og:image:secure_url" content="https://cdn.hldtru.io/assets/social.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="900" />
@@ -40,6 +33,7 @@ export default function Cover() {
     <link rel="stylesheet" href="https://cdn.hldtru.io/stylesheets/font.css" />
   </Head>
 
+  <Sidenav />
 
   <Canvas shadows dpr={[1, 2]} camera={{ position: [1, 2, 2] }}>
     <Suspense fallback={null}>
