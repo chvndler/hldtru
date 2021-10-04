@@ -4,6 +4,8 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Background from '../public/background.jpg'
 import ArchiveLogo from '../public/ArchiveLogo.svg'
+import { ChakraProvider } from "@chakra-ui/react"
+import { Container, Box, HStack, Skeleton } from "@chakra-ui/react"
 
 export default function Archive() {
   return (
@@ -25,99 +27,9 @@ export default function Archive() {
     <link rel="stylesheet" href="https://cdn.hldtru.io/stylesheets/font.css" />
   </Head>
 
-  <Image
-    src="https://cdn.hldtru.space/assets/tiffany.jpg"
-    alt="cover image"
-    layout="fill"
-    objectFit="cover"
-    placeholder="empty"
-    quality="100"
-  />
 
-  <div className={styles.header}>
-    <Link href="/">
-      <a className={styles.svg}>
-        <Image src={ArchiveLogo} alt="archive.logo" srcSet="0.5x" />
-      </a>
-    </Link>
-  </div>
 
-  <div className={styles.sidenav}>
-    <a
-      href="https://shop.hldtru.com/collections/new"
-      target="_blank"
-      rel="noreferrer"
-    >
-      Days of truth
-    </a>
-    <a
-      href="https://shop.hldtru.com/collections/shorts"
-      target="_blank"
-      rel="noreferrer"
-    >
-      Copenhagen© Racing
-    </a>
-    <a
-      href="https://shop.hldtru.com/collections/tees"
-      target="_blank"
-      rel="noreferrer"
-    >
-      V2 Training
-    </a>
-    <a
-      href="https://shop.hldtru.com/collections/all"
-      target="_blank"
-      rel="noreferrer"
-    >
-      Preseason
-    </a>
-    <Link href="/hxouse">
-      <a>Powered by</a>
-    </Link>
 
-    <Link href="/archive">
-      <a>Collection 1</a>
-    </Link>
-    <br />
-
-    <Link href="/about">
-      <a>
-        <h5>About</h5>
-      </a>
-    </Link>
-
-    <Link href="/">
-      <a>
-        <h5>Home</h5>
-      </a>
-    </Link>
-
-    <Link href="/cover">
-      <a>
-        <h5>Cover</h5>
-      </a>
-    </Link>
-
-    <Link href="/early">
-      <a>
-        <h5>Early Access</h5>
-      </a>
-    </Link>
-  </div>
-
-  <footer className={styles.footer}>
-    <Link href="/">
-      <a>Contact</a>
-    </Link>
-
-    <Link href="/">
-      <a>Terms & Conditions</a>
-    </Link>
-
-    <a href="https://instagram.com/hldtru" target="_blank" rel="noreferrer">
-      Instagram
-    </a>
-  </footer>
 </div>
 
   )
