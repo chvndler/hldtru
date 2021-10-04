@@ -51,8 +51,14 @@ export default function Early() {
     />
     <meta property="og:title" content="hldtru®" />
     <meta property="og:url" content="https://www.hldtru.com/early" />
-    <meta property="og:image" content="https://cdn.hldtru.space/assets/social.jpg" />
-    <meta property="og:image:secure_url" content="https://cdn.hldtru.io/assets/social.jpg" />
+    <meta
+      property="og:image"
+      content="https://cdn.hldtru.space/assets/social.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://cdn.hldtru.io/assets/social.jpg"
+    />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="900" />
@@ -62,14 +68,11 @@ export default function Early() {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.hldtru.io/stylesheets/font.css"
-    />
+    <link rel="stylesheet" href="https://cdn.hldtru.io/stylesheets/font.css" />
   </Head>
 
   <ChakraProvider>
-   <Time />
+    <Time />
     <Center
       maxH="100vh"
       h="100vh"
@@ -80,15 +83,13 @@ export default function Early() {
       w="100%"
     >
       <VStack w="100%">
-        <Heading size="xl">
-				Early Access.
-				</Heading>
+        <Heading size="xl">Early Access.</Heading>
 
-       <Skeleton height="20px" isLoaded />
+        <Skeleton height="20px" isLoaded />
 
         <Access />
 
-				<Skeleton height="20px" isLoaded />
+        <Skeleton height="20px" isLoaded />
 
         <Text fontSize="sm">
           <i>
@@ -100,7 +101,6 @@ export default function Early() {
     </Center>
 
     <Socialfooter />
-
   </ChakraProvider>
 </div>
 

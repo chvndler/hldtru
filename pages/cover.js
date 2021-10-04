@@ -4,8 +4,9 @@ import { Canvas } from '@react-three/fiber'
 import { useLoader } from "@react-three/fiber";
 import { OrbitControls, Stage, Environment } from '@react-three/drei'
 import Sidenav from '../components/Sidenav'
-import styles from '../styles/Model.module.css'
 import Model from '../components/Model'
+import styles from '../styles/Model.module.css'
+
 
 export default function Cover() {
   const ref = useRef()

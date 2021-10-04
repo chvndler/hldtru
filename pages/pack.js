@@ -26,12 +26,14 @@ export default function Pack() {
   return (
 
 <div className={styles.canvas_fluid}>
-
   <Head>
     <title>Short Packs.</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Web Application for hldtru®" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -41,7 +43,6 @@ export default function Pack() {
   </Head>
 
   <ChakraProvider>
-
     <Nav />
 
     <Container pt="100" pb="100" maxW="container.md">
@@ -51,18 +52,26 @@ export default function Pack() {
       <Skeleton height="12px" isLoaded />
 
       <Text fontSize="sm">
-        <strong>1</strong> Add 2 DOT© Shorts to your cart. These can be any two colors, or the same.
+        <strong>1</strong> Add 2 DOT© Shorts to your cart. These can be any two
+        colors, or the same.
       </Text>
       <Skeleton height="12px" isLoaded />
       <Text fontSize="sm">
-        <strong>2</strong> The pack discount will be <strong><i>automatically</i></strong> applied to your order during checkout. No codes necessary.
+        <strong>2</strong> The pack discount will be{" "}
+        <strong>
+          <i>automatically</i>
+        </strong>{" "}
+        applied to your order during checkout. No codes necessary.
       </Text>
       <Skeleton height="12px" isLoaded />
       <Text fontSize="sm">
-        <strong>3</strong> The Pack discount <strong><i>only applies</i></strong> to the "Days of Truth" Shorts specifically, and cannot be paired with any other items.
+        <strong>3</strong> The Pack discount{" "}
+        <strong>
+          <i>only applies</i>
+        </strong>{" "}
+        to the "Days of Truth" Shorts specifically, and cannot be paired with
+        any other items.
       </Text>
-
-
 
       <Skeleton height="60px" isLoaded />
 
@@ -72,32 +81,47 @@ export default function Pack() {
 
       <Skeleton height="40px" isLoaded />
 
-      <Box as="button" bg="#231f20" w="100%" p={1} borderRadius="10px" color="white" passHref>
-         <Link href="https://shop.hldtru.com/collections/all">
-         <a><strong>SHOP NOW</strong></a>
-         </Link>
+      <Box
+        as="button"
+        bg="#231f20"
+        w="100%"
+        p={1}
+        borderRadius="10px"
+        color="white"
+        passHref
+      >
+        <Link href="https://shop.hldtru.com/collections/all">
+          <a>
+            <strong>SHOP NOW</strong>
+          </a>
+        </Link>
       </Box>
 
-      <Box bg="black" w="100%" h="200px" p={0} mt="10px" mb="10px" borderRadius="10px" color="white">
+      <Box
+        bg="black"
+        w="100%"
+        h="200px"
+        p={0}
+        mt="10px"
+        mb="10px"
+        borderRadius="10px"
+        color="white"
+      >
         <Image
-         src="https://cdn.hldtru.space/assets/ShortsPacks17.jpg"
-         borderRadius="10px"
-         height="300px"
-         width="100%"
-         alt="pack"
-         layout="fill"
-         objectFit="cover"
-         quality={100}
-         placeholder="blur"
-         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
-         />
+          src="https://cdn.hldtru.space/assets/ShortsPacks17.jpg"
+          borderRadius="10px"
+          height="300px"
+          width="100%"
+          alt="pack"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
+        />
       </Box>
 
       <Skeleton height="60px" isLoaded />
-
-
-
-
     </Container>
   </ChakraProvider>
   <Socialfooter />

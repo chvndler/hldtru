@@ -77,10 +77,7 @@ export default function Subscribe() {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.hldtru.io/stylesheets/font.css"
-    />
+    <link rel="stylesheet" href="https://cdn.hldtru.io/stylesheets/font.css" />
     <script
       type="text/javascript"
       async
@@ -89,18 +86,10 @@ export default function Subscribe() {
   </Head>
 
   <ChakraProvider theme={theme}>
-    <Center
-      maxH="100vh"
-      h="100vh"
-      m="0"
-      pl="0px"
-      pr="0px"
-      pb="60px"
-      w="100%"
-    >
+    <Center maxH="100vh" h="100vh" m="0" pl="0px" pr="0px" pb="60px" w="100%">
       <VStack w="100%">
         <Heading>Subscribe.</Heading>
-<div className="klaviyo-form-WfEhm2"></div>
+        <div className="klaviyo-form-WfEhm2"></div>
         <Skeleton height="20px" isLoaded />
 
         <Text fontSize="xs">

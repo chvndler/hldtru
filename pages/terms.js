@@ -50,14 +50,10 @@ export default function Terms() {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.hldtru.io/stylesheets/font.css"
-    />
+    <link rel="stylesheet" href="https://cdn.hldtru.io/stylesheets/font.css" />
   </Head>
 
   <ChakraProvider>
-
     <Nav />
 
     <Skeleton height="140px" isLoaded />
@@ -118,10 +114,11 @@ export default function Terms() {
       </Heading>
       <Skeleton height="8px" isLoaded />
       <Text fontSize="sm">
-      Preoder items are not available to ship at the time of purchase,
-			the shipping timeline may vary. please allow 2 - 3 weeks for your order to be shipped.
-			You will receive an email with order details and tracking information oce your item(s) has shipped.
-			Contact sales@hldtru.com for more information regarding preorder items.
+        Preoder items are not available to ship at the time of purchase, the
+        shipping timeline may vary. please allow 2 - 3 weeks for your order to
+        be shipped. You will receive an email with order details and tracking
+        information oce your item(s) has shipped. Contact sales@hldtru.com for
+        more information regarding preorder items.
         <Skeleton height="40px" isLoaded />
       </Text>
 
@@ -130,7 +127,10 @@ export default function Terms() {
       </Heading>
       <Skeleton height="8px" isLoaded />
       <Text fontSize="sm">
-        Prices do not include shipping, taxes and duties. All products are provided a confirmation number. Orders are shipped from Charlotte, NC as soon as possible. Estimated delivery is to be used as a guide only, delays are not the responsibility of hldtru®.
+        Prices do not include shipping, taxes and duties. All products are
+        provided a confirmation number. Orders are shipped from Charlotte, NC as
+        soon as possible. Estimated delivery is to be used as a guide only,
+        delays are not the responsibility of hldtru®.
       </Text>
 
       <Skeleton height="40px" isLoaded />
@@ -140,16 +140,15 @@ export default function Terms() {
       </Heading>
       <Skeleton height="8px" isLoaded />
       <Text fontSize="sm">
-        We do not offer exchanges or returns on any products. All sales are final.
+        We do not offer exchanges or returns on any products. All sales are
+        final.
       </Text>
-			<Skeleton height="80px" isLoaded />
-			<Text fontSize="xs">
-			Copyright © 2021. All rights reserved.
-			</Text>
-			<Skeleton height="2px" isLoaded />
-			<Text fontSize="xs">
-			<strong>hldtru</strong>®
-			</Text>
+      <Skeleton height="80px" isLoaded />
+      <Text fontSize="xs">Copyright © 2021. All rights reserved.</Text>
+      <Skeleton height="2px" isLoaded />
+      <Text fontSize="xs">
+        <strong>hldtru</strong>®
+      </Text>
     </Container>
 
     <Skeleton height="80px" isLoaded />
@@ -157,10 +156,10 @@ export default function Terms() {
 
     <Box pos="fixed" zIndex={30} bottom="0" bg="white" w="100%" p={3}>
       <Stack direction="row">
-          <AiOutlineInstagram />
-            <TiSocialTwitter />
-          <TiSocialVimeo />
-          <DiGithubBadge />
+        <AiOutlineInstagram />
+        <TiSocialTwitter />
+        <TiSocialVimeo />
+        <DiGithubBadge />
       </Stack>
     </Box>
   </ChakraProvider>
@@ -179,7 +178,6 @@ export default function Terms() {
     </a>
   </footer>
 </div>
-
 
   )
 }

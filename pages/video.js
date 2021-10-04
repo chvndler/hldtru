@@ -20,16 +20,24 @@ import {
 export default function Video() {
   return (
 <div className={styles.main}>
-
   <Head>
     <title>Video.</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Web Application for hldtru®" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <meta property="og:title" content="hldtru®" />
     <meta property="og:url" content="https://www.hldtru.com/cover" />
-    <meta property="og:image" content="https://cdn.hldtru.space/assets/social.jpg" />
-    <meta property="og:image:secure_url" content="https://cdn.hldtru.io/assets/social.jpg" />
+    <meta
+      property="og:image"
+      content="https://cdn.hldtru.space/assets/social.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://cdn.hldtru.io/assets/social.jpg"
+    />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="900" />
@@ -44,41 +52,31 @@ export default function Video() {
   </Head>
 
   <ChakraProvider>
-  <video className={styles.video} playsInline autoPlay muted loop>
-    <source src="/horse.mp4" type="video/mp4" />
-  </video>
-
+    <video className={styles.video} playsInline autoPlay muted loop>
+      <source src="/horse.mp4" type="video/mp4" />
+    </video>
 
     <Time />
 
     <Box width="100vw" pt="22%" m="auto" zIndex="2">
-
       <Flex color="white">
         <Box w="300px" h="10" textAlign="center">
-          <div className={styles.link_left}>
-            Webstore
-          </div>
+          <div className={styles.link_left}>Webstore</div>
         </Box>
         <Spacer />
         <Box w="300px" h="10" textAlign="center">
-          <div className={styles.logo}>
-            HOLDTRUE®
-          </div>
+          <div className={styles.logo}>HOLDTRUE®</div>
         </Box>
         <Spacer />
         <Box w="300px" h="10" textAlign="center">
-          <div className={styles.link_right}>
-            Archive
-          </div>
+          <div className={styles.link_right}>Archive</div>
         </Box>
       </Flex>
-
     </Box>
 
     <Socialfooter />
-
   </ChakraProvider>
-
 </div>
+
   )
 }

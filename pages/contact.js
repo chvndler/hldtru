@@ -26,12 +26,14 @@ export default function Contact() {
   return (
 
 <div className={styles.canvas_fluid}>
-
   <Head>
     <title>Contact.</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Web Application for hldtru®" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -41,7 +43,6 @@ export default function Contact() {
   </Head>
 
   <ChakraProvider>
-
     <Nav />
 
     <Container pt="200" maxW="container.md">
@@ -55,8 +56,13 @@ export default function Contact() {
       </Text>
 
       <Text fontSize="sm">
-        <Link href="mailto:wholesale@hldtru.com" target="_blank" rel="noreferrer" passHref>
-        <a>wholesale@hldtru.com</a>
+        <Link
+          href="mailto:wholesale@hldtru.com"
+          target="_blank"
+          rel="noreferrer"
+          passHref
+        >
+          <a>wholesale@hldtru.com</a>
         </Link>
       </Text>
 
@@ -66,8 +72,13 @@ export default function Contact() {
         <strong>For press inquiries, please contact:</strong>
       </Text>
       <Text fontSize="sm">
-        <Link href="mailto:media@hldtru.com" target="_blank" rel="noreferrer" passHref>
-        <a>media@hldtru.com</a>
+        <Link
+          href="mailto:media@hldtru.com"
+          target="_blank"
+          rel="noreferrer"
+          passHref
+        >
+          <a>media@hldtru.com</a>
         </Link>
       </Text>
 
@@ -77,8 +88,13 @@ export default function Contact() {
         <strong>For general inquiries, please contact:</strong>
       </Text>
       <Text fontSize="sm">
-        <Link href="mailto:shop@hldtru.com" target="_blank" rel="noreferrer" passHref>
-        <a>shop@hldtru.com</a>
+        <Link
+          href="mailto:shop@hldtru.com"
+          target="_blank"
+          rel="noreferrer"
+          passHref
+        >
+          <a>shop@hldtru.com</a>
         </Link>
       </Text>
 
@@ -86,30 +102,43 @@ export default function Contact() {
 
       <Text fontSize="sm">
         <strong>instagram: </strong>
-        <Link href="https://instagram.com/hldtru" target="_blank" rel="noreferrer" passHref>
-        <a>@hldtru</a>
+        <Link
+          href="https://instagram.com/hldtru"
+          target="_blank"
+          rel="noreferrer"
+          passHref
+        >
+          <a>@hldtru</a>
         </Link>
       </Text>
 
       <Text fontSize="sm">
         <strong>twitter: </strong>
-        <Link href="https://twitter.com/hldtru" target="_blank" rel="noreferrer" passHref>
-        <a>@hldtru</a>
+        <Link
+          href="https://twitter.com/hldtru"
+          target="_blank"
+          rel="noreferrer"
+          passHref
+        >
+          <a>@hldtru</a>
         </Link>
       </Text>
 
       <Text fontSize="sm">
         <strong>facebook: </strong>
-        <Link href="https://facebook.com/hldtru" target="_blank" rel="noreferrer" passHref>
-        <a>@hldtru</a>
+        <Link
+          href="https://facebook.com/hldtru"
+          target="_blank"
+          rel="noreferrer"
+          passHref
+        >
+          <a>@hldtru</a>
         </Link>
       </Text>
-
-
-
     </Container>
   </ChakraProvider>
   <Socialfooter />
 </div>
+
  )
 }
