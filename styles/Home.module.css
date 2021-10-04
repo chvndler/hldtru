@@ -167,6 +167,7 @@
 
   .sidenav {
 		top: 130px !important;
+    width: 160px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
