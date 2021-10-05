@@ -7,6 +7,7 @@ import { AiOutlineInstagram } from 'react-icons/ai'
 import { TiSocialTwitter } from "react-icons/ti"
 import { TiSocialVimeo } from "react-icons/ti"
 import Tiffany from '/public/tiffany_hd.jpg'
+import Footer from '../components/Footer'
 
 
 
@@ -46,15 +47,9 @@ export default function Home() {
   </Head>
 
   <div className={styles.cover}>
-    <Image
-      src="https://cdn.hldtru.space/assets/black.jpg"
-      alt="cover"
-      layout="fill"
-      objectFit="cover"
-      quality={100}
-      placeholder="blur"
-      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+zHgAFeAJ5UEZb3wAAAABJRU5ErkJggg=="
-    />
+	<video className={styles.video} playsInline autoPlay muted loop crossOrigin="true">
+	   <source src="/truth.mp4" type="video/mp4" />
+  </video>
   </div>
 
   <div className={styles.header}>
@@ -149,19 +144,8 @@ export default function Home() {
     </ChakraProvider>
   </div>
 
-  <footer className={styles.footer}>
-    <Link href="/contact">
-      <a>Contact</a>
-    </Link>
+  <Footer />
 
-    <Link href="/terms">
-      <a>Terms & Conditions</a>
-    </Link>
-
-    <Link href="/privacy">
-      <a>Privacy Policy</a>
-    </Link>
-  </footer>
 </div>
 
  )
