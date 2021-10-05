@@ -47,9 +47,16 @@ export default function Home() {
   </Head>
 
   <div className={styles.cover}>
-	<video className={styles.video} playsInline autoPlay muted loop crossOrigin="true">
-	   <source src="/truth.mp4" type="video/mp4" />
-  </video>
+    <video
+      className={styles.video}
+      playsInline
+      autoPlay
+      muted
+      loop
+      crossOrigin="true"
+    >
+      <source src="/truth.mp4" type="video/mp4" />
+    </video>
   </div>
 
   <div className={styles.header}>
@@ -145,8 +152,8 @@ export default function Home() {
   </div>
 
   <Footer />
-
 </div>
+
 
  )
 }
