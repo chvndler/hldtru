@@ -12,7 +12,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "base-uri 'self'; connect-src 'self' cdn.jsdelivr.net; default-src 'none'; font-src 'self' hldtru.io; form-action 'self'; frame-ancestors 'none'; frame-src 'self'; img-src 'self' data:; manifest-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self' cdn.hldtru.space; upgrade-insecure-requests;"
+          "value": "base-uri 'self'; connect-src 'self' raw.githack.com; default-src 'none'; font-src 'self' hldtru.io; form-action 'self'; frame-ancestors 'none'; frame-src 'self'; img-src 'self' data:; manifest-src 'self'; media-src 'self' raw.githack.com; object-src 'self' raw.githack.com; script-src 'self'; style-src 'self' cdn.hldtru.space, cdn.hldtru.io, hldtru.io; upgrade-insecure-requests;"
         },
         {
           "key": "Expect-CT",
