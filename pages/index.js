@@ -58,7 +58,7 @@ export default function Home() {
       loop
       crossOrigin="true"
     >
-      <source src="/truth.mp4" type="video/mp4" />
+      <source src="/spectrum.mp4" type="video/mp4" />
     </video>
   </div>
 
@@ -156,7 +156,6 @@ export default function Home() {
 
   <Footer />
 </div>
-
 
  )
 }
