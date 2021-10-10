@@ -51,14 +51,14 @@ export default function Cover() {
 
   <Canvas shadows dpr={[1, 2]} camera={{ position: [1, 2, 2] }}>
     <Suspense fallback={null}>
-			<Environment background={true} files={'/sunrise_1k.hdr'} />
-      <Stage
-        controls={ref}
-        preset="rembrandt"
-        intensity={1}
-        contactShadow={false}
-        environment="forest"
-      >
+			<Environment background={true} files={'/roof_2k.hdr'} />
+        <Stage
+    controls={ref}
+    preset="rembrandt"
+    intensity={1}
+    contactShadow={false}
+    environment="forest"
+  >
         <Model />
       </Stage>
     </Suspense>
