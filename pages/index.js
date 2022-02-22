@@ -35,11 +35,13 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
+      {/* <!-- 
       <div className={styles.cover}>
         <video className={styles.video} playsInline autoPlay muted loop crossOrigin="true">
           <source src="/spectrum.mp4" type="video/mp4" />
         </video>
       </div>
+      --> */}
 
       <div className={styles.header}>
         <Link href="/">
