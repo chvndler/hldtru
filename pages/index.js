@@ -64,10 +64,10 @@ export default function Home() {
       </div>
 
       <div className={styles.sidenav}>
-        <a href="https://hldtru.com/">New</a>
-        <a href="https://hldtru.com/">Shorts</a>
-        <a href="https://hldtru.com/">Tees</a>
-        <a href="https://hldtru.com/">Shop All</a>
+        <a href="https://hldtru.com/collections/new">New</a>
+        <a href="https://hldtru.com/collections/shorts">Shorts</a>
+        <a href="https://hldtru.com/collections/tees">Tees</a>
+        <a href="https://hldtru.com/collections/all">Shop All</a>
         <Link href="/hxouse">
           <a>HXOUSE</a>
         </Link>
