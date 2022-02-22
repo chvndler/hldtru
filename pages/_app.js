@@ -1,3 +1,4 @@
+import '../styles/fonts.css';
 import styles from '../styles/globals.css';
 import { ChakraProvider } from '@chakra-ui/react';
 import { extendTheme } from '@chakra-ui/react';

@@ -33,7 +33,6 @@ export default function Home() {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-        <link rel="stylesheet" href="https://cdn.hldtru.io/stylesheets/font.css" />
       </Head>
 
       <div className={styles.cover}>
@@ -65,15 +64,15 @@ export default function Home() {
       </div>
 
       <div className={styles.sidenav}>
-        <a href="https://shop.hldtru.com/collections/new">New</a>
-        <a href="https://shop.hldtru.com/collections/shorts">Shorts</a>
-        <a href="https://shop.hldtru.com/collections/tees">Tees</a>
-        <a href="https://shop.hldtru.com/collections/all">Shop All</a>
+        <a href="https://hldtru.com/">New</a>
+        <a href="https://hldtru.com/">Shorts</a>
+        <a href="https://hldtru.com/">Tees</a>
+        <a href="https://hldtru.com/">Shop All</a>
         <Link href="/hxouse">
           <a>HXOUSE</a>
         </Link>
 
-        <Link href="/front">
+        <Link href="/">
           <a>Archive®</a>
         </Link>
 
