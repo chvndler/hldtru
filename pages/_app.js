@@ -3,6 +3,7 @@ import styles from '../styles/globals.css';
 import { ChakraProvider } from '@chakra-ui/react';
 import { extendTheme } from '@chakra-ui/react';
 import App from 'next/app';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
   const theme = extendTheme({
@@ -28,6 +29,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      </Head>
       <Component {...pageProps} />
     </ChakraProvider>
   );
